@@ -307,6 +307,8 @@
         <item>TLS</item>
         <!-- Do not translate. -->
         <item>TTLS</item>
+       <!-- Do not translate. -->
+        <item>PWD</item>
     </string-array>
 
    <!-- Wi-Fi WPS setup for p2p connections.  -->
@@ -416,6 +418,7 @@
         <item>PEAP</item>
         <item>TLS</item>
         <item>TTLS</item>
+        <item>PWD</item>
     </string-array>
 
     <!-- Phase 2 options -->
@@ -704,4 +707,166 @@
         <!-- Status message when VPN is failed. -->
         <item>Unsuccessful</item>
     </string-array>
+<string-array name="am_pm_values">
+         <item>0</item>
+ 	 <item>1</item>
+ 	 <item>2</item>
+     </string-array>
+    <string-array name="am_pm_entries">
+         <item>Show AM_PM</item>
+        <item>Small AM/PM</item>
+         <item>Hide AM/PM</item>
+     </string-array>
+     <string-array name="clock_values">
+     <item>0</item>
+     <item>1</item>
+     <item>2</item>
+   </string-array>
+   <string-array name="clock_entries">
+     <item>Hide clock</item>
+     <item>Show - right</item>
+    <item>Show - center</item>
+   </string-array>
+ <!-- Arrays for root access capability --> 
+    <string-array name="root_access_entries"> 
+        <item>@string/root_access_none</item> 
+        <item>@string/root_access_apps</item> 
+        <item>@string/root_access_adb</item> 
+        <item>@string/root_access_all</item> 
+    </string-array> 
+ 
+    <string-array name="root_access_values"> 
+        <item>0</item> 
+        <item>1</item> 
+        <item>2</item> 
+        <item>3</item> 
+    </string-array> 
+
+ <!-- Arrays requred by Automatic Backlight -->
+    <string-array name="entries_light_filter_window">
+        <item>2 s</item>
+        <item>5 s</item>
+        <item>10 s</item>
+        <item>20 s</item>
+        <item>30 s</item>
+        <item>60 s</item>
+    </string-array>
+
+    <string-array name="values_light_filter_window" translatable="false">
+        <item>2000</item>
+        <item>5000</item>
+        <item>10000</item>
+        <item>20000</item>
+        <item>30000</item>
+        <item>60000</item>
+    </string-array>
+
+    <string-array name="entries_light_filter_reset">
+        <item>Disabled</item>
+        <item>400 lux</item>
+        <item>500 lux</item>
+        <item>600 lux</item>
+        <item>700 lux</item>
+        <item>800 lux</item>
+        <item>900 lux</item>
+        <item>1000 lux</item>
+        <item>1500 lux</item>
+        <item>2000 lux</item>
+        <item>2500 lux</item>
+    </string-array>
+
+    <string-array name="values_light_filter_reset" translatable="false">
+        <item>-1</item>
+        <item>400</item>
+        <item>500</item>
+        <item>600</item>
+        <item>700</item>
+        <item>800</item>
+        <item>900</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>2000</item>
+        <item>2500</item>
+    </string-array>
+
+    <string-array name="entries_light_filter_interval">
+        <item>0.5 s</item>
+        <item>1 s</item>
+        <item>2 s</item>
+        <item>5 s</item>
+        <item>10 s</item>
+    </string-array>
+
+    <string-array name="values_light_filter_interval" translatable="false">
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>5000</item>
+        <item>10000</item>
+    </string-array>
+
+    <string-array name="entries_light_levels_dim">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20 (default)</item>
+        <item>22</item>
+        <item>24</item>
+        <item>26</item>
+    </string-array>
+
+    <string-array name="values_light_levels_dim" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+        <item>22</item>
+        <item>24</item>
+        <item>26</item>
+    </string-array>
+
+    <string-array name="entries_light_decrease_hysteresis">
+        <item>0 %</item>
+        <item>10 %</item>
+        <item>20 %</item>
+        <item>30 %</item>
+        <item>40 %</item>
+        <item>50 %</item>
+        <item>60 %</item>
+        <item>70 %</item>
+        <item>80 %</item>
+        <item>90 %</item>
+    </string-array>
+
+    <string-array name="values_light_decrease_hysteresis" translatable="false">
+        <item>0</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+    </string-array>
+
 </resources>
