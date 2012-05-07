@@ -83,13 +83,7 @@
             android:targetPackage="com.teamsourcery.sourcerytools"
             android:targetClass="com.teamsourcery.sourcerytools.MainActivity" />
     </header>
-   <!-- Profiles -->
-    <header
-        android:id="@+id/profiles_settings"
-        android:icon="@drawable/ic_settings_profiles"
-        android:fragment="com.android.settings.ProfilesSettings"
-        android:title="@string/profiles_settings_title" />
-
+  
 <!-- credits -->
     <header
         android:id="@+id/credit_settings"
