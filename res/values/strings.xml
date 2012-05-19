@@ -558,6 +558,7 @@
 
     <!-- Button label for generic cancel action -->
     <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
 
     <!-- Title of the Settings activity shown within the application itself. -->
     <string name="settings_label">Settings</string>
@@ -1516,8 +1517,8 @@
     <string name="vibrate_on_ring_title">Vibrate and ring</string>
     <!-- Sound settings screen, setting option name -->
     <string name="notification_sound_title">Default notification</string>
-    <!-- Sound settings screen, notification light repeat pulsing title -->
-    <string name="notification_pulse_title">Pulse notification light</string>
+    <!-- Sound settings screen, notification light repeat pulsing title 
+    <string name="notification_pulse_title">Pulse notification light</string>-->
     <!-- Sound settings screen, the title of the volume bar to adjust the incoming call volume -->
     <string name="incoming_call_volume_title">Ringtone</string>
     <!-- Sound settings screen, the title of the volume bar to adjust the notification volume -->
