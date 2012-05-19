@@ -55,7 +55,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
     private CheckBoxPreference mAccelerometer;
     private ListPreference mFontSizePref;
-    private CheckBoxPreference mNotificationPulse;
+    private PreferenceScreen mNotificationPulse;
 
     private final Configuration mCurConfig = new Configuration();
     
@@ -88,21 +88,16 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
         mFontSizePref = (ListPreference) findPreference(KEY_FONT_SIZE);
         mFontSizePref.setOnPreferenceChangeListener(this);
-        mNotificationPulse = (CheckBoxPreference) findPreference(KEY_NOTIFICATION_PULSE);
-        if (mNotificationPulse != null
-                && getResources().getBoolean(
-                        com.android.internal.R.bool.config_intrusiveNotificationLed) == false) {
-            getPreferenceScreen().removePreference(mNotificationPulse);
-        } else {
-            try {
-                mNotificationPulse.setChecked(Settings.System.getInt(resolver,
-                        Settings.System.NOTIFICATION_LIGHT_PULSE) == 1);
-                mNotificationPulse.setOnPreferenceChangeListener(this);
-            } catch (SettingNotFoundException snfe) {
-                Log.e(TAG, Settings.System.NOTIFICATION_LIGHT_PULSE + " not found");
+
+       mNotificationPulse = (PreferenceScreen) findPreference(KEY_NOTIFICATION_PULSE);
+        if (mNotificationPulse != null) {
+            if (!getResources().getBoolean(com.android.internal.R.bool.config_intrusiveNotificationLed)) {
+                getPreferenceScreen().removePreference(mNotificationPulse);
+            } else {
+                updateLightPulseDescription();
             }
         }
-    }
+  
 
     private void updateTimeoutPreferenceDescription(long currentTimeout) {
         ListPreference preference = mScreenTimeoutPreference;
@@ -196,6 +191,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     @Override
     public void onResume() {
         super.onResume();
+
+        updateLightPulseDescription();
 
         updateState();
         getContentResolver().registerContentObserver(
