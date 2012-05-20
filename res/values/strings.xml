@@ -3894,8 +3894,8 @@ found in the list of installed apps.</string>
     <string name="pref_title_build_info">Donate</string>
     <string name="adw_donate">Any Donations Will go back into the rom , No profits will be made by Team Sourcery. This Rom is for fun not profit!</string>
 
-<!-- Display | Backlight -->
-<string name="backlight_title">Custom backlight settings</string>
+    <!-- Display | Backlight -->
+    <string name="backlight_title">Custom backlight settings</string>
     <string name="backlight_settings">Automatic backlight</string>
     <string name="backlight_settings_title">Automatic backlight</string>
     <string name="backlight_summary">Tweak levels and filtering</string>
