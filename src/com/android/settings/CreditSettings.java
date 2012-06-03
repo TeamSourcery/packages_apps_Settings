@@ -112,6 +112,30 @@ if (getPreferenceManager() != null) {
 			}
 		});
 
+           Preference forumLink = (Preference) findPreference("forumPref");
+        forumLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				String url = "http://teamsourcery.com/phpBB3/index.php";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);				
+				return true;
+			}
+		});
+
+ Preference githubLink = (Preference) findPreference("githubPref");
+       githubLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				String url = "https://github.com/TeamSourcery";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);				
+				return true;
+			}
+		});
+
   Preference websiteLink = (Preference) findPreference("websitePref");
         websiteLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 			public boolean onPreferenceClick(Preference preference) {

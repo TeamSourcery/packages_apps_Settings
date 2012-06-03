@@ -32,6 +32,12 @@
                 android:summary="For latest information!">
         </PreferenceScreen>
 
+         <PreferenceScreen
+                android:key="forumPref"
+                android:title="ICSourcery Forums"
+                android:summary="Join in the fun !">
+        </PreferenceScreen>
+
        <PreferenceScreen android:title="ICSourcery Credits" 
 		android:summary="SOURCERY INFO AND CREDITS">
 
@@ -50,11 +56,11 @@
 
              <PreferenceScreen android:title="DeVorteX" 
 			android:key="credits_google_key"
-			android:summary="CO-Rom Development" />
+			android:summary="CO-Rom Development, Tools app Guru!" />
 
                <PreferenceScreen android:title="Chizzele" 
 			android:key="credits_google_key" 
-			android:summary="Official Sourcery Boot animations Designer!, ICSourcery Wallpaper Designer, Public Relations, Support technician, Webpage Development." /> 
+			android:summary="Official Sourcery Boot animations Designer!, ICSourcery Wallpaper Designer, Public Relations, Support technician, Webpage  and Forum Development." /> 
 
               <PreferenceScreen android:title="T-dev" 
 			android:key="credits_google_key" 
@@ -66,7 +72,7 @@
                  
           <PreferenceScreen android:title="xkape" 
 			android:key="credits_google_key" 
-			android:summary="Theme consultant , Theme development, Rom Tester!" />
+			android:summary="Theme consultant , Theme development, Rom Tester! Unfortunately Xkape is busy with life but will return!" />
 
                 <PreferenceScreen android:title="atreyu381" 
 			android:key="credits_google_key" 
@@ -111,30 +117,16 @@
 			android:summary="For allowing us to use their great APEX Launcher as base Launcher of ICSourcery!" />
 
  
-<PreferenceScreen android:title="Kamma" 
+<PreferenceScreen android:title="buckmarble" 
 			android:key="credits_google_key" 
-			android:summary="For allowing us to use his awesome contacts app." />
-
-
-
-                <PreferenceScreen android:title="David Horn" 
-			android:key="credits_google_key" 
-			android:summary="For allowing us to use his app Altimeter" />
-
-                <PreferenceScreen android:title="Cumulonibus" 
-			android:key="credits_google_key" 
-			android:summary="For allowing us to use their app pressureNET." />
-
-                <PreferenceScreen android:title="Scott Main" 
-			android:key="credits_google_key" 
-			android:summary="Devloper of the great app SearchLight!" />
+			android:summary="Testing, suggestions, some themeing, and repo testing!" />
 
                             
                  <PreferenceScreen android:title="Stale Bread" 
 			android:key="credits_google_key" 
 			android:summary="For the awesome Animations" />
 
- <PreferenceScreen android:title="thepysntyst" 
+                 <PreferenceScreen android:title="thepysntyst" 
 			android:key="credits_google_key" 
 			android:summary="For the awesome Animations" />
 
@@ -159,7 +151,7 @@
 			android:key="credits_google_key" 
 			android:summary="Thanks google for Android,Apps,OpenSource Just the best damn Phone OS ever." />
 
-  <PreferenceScreen android:title="Samsung" 
+                <PreferenceScreen android:title="Samsung" 
 			android:key="credits_google_key" 
 			android:summary="For making a damn nice phone!" />
 
@@ -193,23 +185,24 @@
 
                 <PreferenceScreen android:title="If we missed you" 
 			android:key="credits_google_key" 
-			android:summary="Droid forums- eagle1967, IRC ##Sourcery , E-mail icsourcery@gmail.com" />
+			android:summary="Most forums- eagle1967, IRC ##Sourcery , E-mail icsourcery@gmail.com" />
             </PreferenceCategory>
 
        
               <PreferenceCategory android:title="Other Credits">
 
-<PreferenceScreen android:title="ICSourcery Tools" 
+              <PreferenceScreen android:title="ICSourcery Tools" 
 			android:key="credits_google_key" 
-			android:summary="Kernels,BootAnimations,Mods,Themes,Soft Keys,Apps are property of their developers as credited." />
+			android:summary="Kernels,BootAnimations,Mods,Themes,Soft Keys,Apps, ETC. are property of their developers as credited." />
 
-<PreferenceScreen android:title="Donations" 
+             <PreferenceScreen android:title="Donations" 
 			android:key="credits_google_key" 
 			android:summary="Thankyou for all who have donated, All donations will go back into the rom either buying a device for a team member without or securing use of programs for sourcery." />
 
-<PreferenceScreen android:title="ICSourcery Source" 
-			android:key="credits_google_key" 
-			android:summary="We are currently working on posting source ." />
+            <PreferenceScreen
+                android:key="githubPref"
+                android:title="ICSourcery Source Code"
+                android:summary="Yes ICSourcery is now hosted on Github." />
 
 
 
