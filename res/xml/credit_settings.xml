@@ -113,25 +113,25 @@
 			android:summary="We couldn't make ICSourcery without the help of the community. " />
 
  <PreferenceScreen android:title="Android Does" 
-			android:key="credits_google_key" 
+			android:key="androiddoesPref" 
 			android:summary="For allowing us to use their great APEX Launcher as base Launcher of ICSourcery!" />
 
  
 <PreferenceScreen android:title="buckmarble" 
-			android:key="credits_google_key" 
+			android:key="buckmarblePref" 
 			android:summary="Testing, suggestions, some themeing, and repo testing!" />
 
                             
                  <PreferenceScreen android:title="Stale Bread" 
 			android:key="credits_google_key" 
-			android:summary="For the awesome Animations" />
+			android:summary="For the awesome Animations, while his stuff can be found at XDA i havent found any recent activity." />
 
                  <PreferenceScreen android:title="thepysntyst" 
-			android:key="credits_google_key" 
+			android:key="thepysntystPref" 
 			android:summary="For the awesome Animations" />
 
                  <PreferenceScreen android:title="CJM" 
-			android:key="credits_google_key" 
+			android:key="cjmPref" 
 			android:summary="For many of the great Wallpapers and pulldown mods.." />
 
 <PreferenceScreen android:title="CJM,Cynkrzy,Atticus" 
@@ -142,7 +142,7 @@
 			android:key="credits_google_key" 
 			android:summary="For many of the great for battery mods available in Sourcery Tools." />
 <PreferenceScreen android:title="Kernel Developers" 
-			android:key="credits_google_key" 
+			android:key="kernelsPref" 
 			android:summary="For all the great kerenls in Sourcery Tools. Please support the kernel developers as they do great work." />
 
 
@@ -161,11 +161,11 @@
             <PreferenceCategory android:title="Great Gratitude">
 
                 <PreferenceScreen android:title="Droid Forums" 
-			android:key="credits_google_key" 
+			android:key="droidforumPref" 
 			android:summary="For allowing us to host our rom on their great site." />
 
 <PreferenceScreen android:title="RootzWiki" 
-			android:key="credits_google_key" 
+			android:key="rootwikiPref" 
 			android:summary="For allowing us to host our rom on their great site." />
 
 <PreferenceScreen android:title="All Mods of Droid Forums and RootzWiki" 
@@ -173,7 +173,7 @@
 			android:summary="Just too many to mention your all great! " />
 
 <PreferenceScreen android:title="XDA." 
-			android:key="credits_google_key" 
+			android:key="xdaPref" 
 			android:summary="For making some of the best developers available to contact. " />
 
 </PreferenceCategory>

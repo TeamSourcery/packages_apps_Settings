@@ -112,6 +112,105 @@ if (getPreferenceManager() != null) {
 			}
 		});
 
+            Preference androiddoesLink = (Preference) findPreference("androiddoesPref");
+        androiddoesLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				String url = "http://blog.anddoes.com/";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);				
+				return true;
+			}
+		});
+
+            Preference buckmarbleLink = (Preference) findPreference("buckmarblePref");
+        buckmarbleLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				String url = "http://maverickrom.us.to/";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);				
+				return true;
+			}
+		});
+
+              Preference thepysntystLink = (Preference) findPreference("thepysntystPref");
+        thepysntystLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				String url = "http://rootzwiki.com/user/4743-thepsyntyst/";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);				
+				return true;
+			}
+		});
+
+       
+              Preference cjmLink = (Preference) findPreference("cjmPref");
+        cjmLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				String url = "http://www.galaxynexusforum.com/forum/members/392.html";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);				
+				return true;
+			}
+		});
+
+           Preference kernelsLink = (Preference) findPreference("kernelsPref");
+       kernelsLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				String url = "http://forum.xda-developers.com/forumdisplay.php?f=1455";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);				
+				return true;
+			}
+		});
+
+           
+           Preference droidforumLink = (Preference) findPreference("droidforumPref");
+       droidforumLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				String url = "http://www.droidforums.net/";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);				
+				return true;
+			}
+		});
+
+           Preference rootwikiLink = (Preference) findPreference("rootwikiPref");
+       rootwikiLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				String url = "http://rootzwiki.com/news";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);				
+				return true;
+			}
+		});
+
+         Preference xdaLink = (Preference) findPreference("xdaPref");
+       xdaLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				String url = "http://www.xda-developers.com/";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);				
+				return true;
+			}
+		});
+
+
            Preference forumLink = (Preference) findPreference("forumPref");
         forumLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 			public boolean onPreferenceClick(Preference preference) {

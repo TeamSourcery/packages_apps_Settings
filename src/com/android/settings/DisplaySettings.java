@@ -18,6 +18,8 @@ package com.android.settings;
 
 import static android.provider.Settings.System.SCREEN_OFF_TIMEOUT;
 
+import java.util.ArrayList;
+
 import android.app.ActivityManagerNative;
 import android.app.admin.DevicePolicyManager;
 import android.content.ContentResolver;
@@ -39,7 +41,7 @@ import android.util.Log;
 import android.view.IWindowManager;
 import android.view.Surface;
 
-import java.util.ArrayList;
+
 
 public class DisplaySettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -56,7 +58,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
     private CheckBoxPreference mAccelerometer;
     private ListPreference mFontSizePref;
-    private CheckBoxPreference mNotificationPulse;
+    private PreferenceScreen mNotificationPulse;
     private CheckBoxPreference mBatteryPulse;
 
     private final Configuration mCurConfig = new Configuration();
@@ -90,18 +92,13 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
         mFontSizePref = (ListPreference) findPreference(KEY_FONT_SIZE);
         mFontSizePref.setOnPreferenceChangeListener(this);
-        mNotificationPulse = (CheckBoxPreference) findPreference(KEY_NOTIFICATION_PULSE);
-        if (mNotificationPulse != null
-                && getResources().getBoolean(
-                        com.android.internal.R.bool.config_intrusiveNotificationLed) == false) {
-            getPreferenceScreen().removePreference(mNotificationPulse);
-        } else {
-            try {
-                mNotificationPulse.setChecked(Settings.System.getInt(resolver,
-                        Settings.System.NOTIFICATION_LIGHT_PULSE) == 1);
-                mNotificationPulse.setOnPreferenceChangeListener(this);
-            } catch (SettingNotFoundException snfe) {
-                Log.e(TAG, Settings.System.NOTIFICATION_LIGHT_PULSE + " not found");
+        mNotificationPulse = (PreferenceScreen) findPreference(KEY_NOTIFICATION_PULSE);
+ 	 	
+        if (mNotificationPulse != null) {
+ 	    if (!getResources().getBoolean(com.android.internal.R.bool.config_intrusiveNotificationLed)) {
+                getPreferenceScreen().removePreference(mNotificationPulse);
+            } else {
+ 	      updateLightPulseDescription();
             }
         }
     mBatteryPulse = (CheckBoxPreference) findPreference(KEY_BATTERY_PULSE);
@@ -175,6 +172,15 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         screenTimeoutPreference.setEnabled(revisedEntries.size() > 0);
     }
 
+    private void updateLightPulseDescription() {
+        if (Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.NOTIFICATION_LIGHT_PULSE, 0) == 1) {
+            mNotificationPulse.setSummary(getString(R.string.notification_light_enabled));
+        } else {
+            mNotificationPulse.setSummary(getString(R.string.notification_light_disabled));
+        }
+    }
+
     int floatToIndex(float val) {
         String[] indices = getResources().getStringArray(R.array.entryvalues_font_size);
         float lastVal = Float.parseFloat(indices[0]);
@@ -209,6 +215,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     @Override
     public void onResume() {
         super.onResume();
+        updateLightPulseDescription();
 
         updateState();
         getContentResolver().registerContentObserver(
@@ -257,11 +264,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             } catch (RemoteException exc) {
                 Log.w(TAG, "Unable to save auto-rotate setting");
             }
-        } else if (preference == mNotificationPulse) {
-            boolean value = mNotificationPulse.isChecked();
-            Settings.System.putInt(getContentResolver(), Settings.System.NOTIFICATION_LIGHT_PULSE,
-                    value ? 1 : 0);
-            return true;
         } else if (preference == mBatteryPulse) {
             boolean value = mBatteryPulse.isChecked();
  	    Settings.System.putInt(getContentResolver(), Settings.System.BATTERY_LIGHT_PULSE,
