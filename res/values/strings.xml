@@ -4065,6 +4065,7 @@ found in the list of installed apps.</string>
     <string name="profile_choose_app">Choose application</string>
     <string name="profile_settings_header">Profile settings</string>
 
+  
     <!-- Profiles - system settings -->
     <string name="profile_system_settings_title">System settings</string>
     <string name="profile_lockmode_title">Lock screen mode</string>
@@ -4084,5 +4085,7 @@ found in the list of installed apps.</string>
 
     <string name="profile_disable_screen_lock_summary">Disable lock screen security while this profile is active</string>
 
-   
+      <!-- Hostname setting -->
+    <string name="device_hostname">Device hostname</string>
+
 </resources>
