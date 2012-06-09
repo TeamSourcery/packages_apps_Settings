@@ -210,6 +210,18 @@ if (getPreferenceManager() != null) {
 			}
 		});
 
+          Preference teaminitLink = (Preference) findPreference("teaminitPref");
+       teaminitLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				String url = "http://init2winitapps.com/";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);				
+				return true;
+			}
+		});
+
 
            Preference forumLink = (Preference) findPreference("forumPref");
         forumLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
@@ -228,6 +240,18 @@ if (getPreferenceManager() != null) {
 			public boolean onPreferenceClick(Preference preference) {
 				// TODO Auto-generated method stub
 				String url = "https://github.com/TeamSourcery";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);				
+				return true;
+			}
+		});
+
+ Preference tdevLink = (Preference) findPreference("tdevPref");
+       tdevLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				String url = "https://teamsourcery/ICSourcery/bios/T-dev.html";
 				Intent i = new Intent(Intent.ACTION_VIEW);
 				i.setData(Uri.parse(url));
 				startActivity(i);				

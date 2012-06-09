@@ -63,7 +63,7 @@
 			android:summary="Official Sourcery Boot animations Designer!, ICSourcery Wallpaper Designer, Public Relations, Support technician, Webpage  and Forum Development." /> 
 
               <PreferenceScreen android:title="T-dev" 
-			android:key="credits_google_key" 
+			android:key="tdevPref" 
 			android:summary="IRC maintainer, Support Technician, Kernel Tester and maintainer." />
 
             <PreferenceScreen android:title="Alastrionia" 
@@ -101,7 +101,7 @@
             <PreferenceCategory android:title="Special Thanks">
 
 <PreferenceScreen android:title="Teaminit2winit" 
-			android:key="credits_google_key" 
+			android:key="teaminitPref" 
 			android:summary="For original build of Sourcery tools, WE thanks them for passing the source to us so we can continue upon their great work." />
 
              <PreferenceScreen android:title="Codenamedroid , Greg(PE) , JBirdVegas " 
