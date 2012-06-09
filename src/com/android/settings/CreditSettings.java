@@ -251,7 +251,7 @@ if (getPreferenceManager() != null) {
        tdevLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 			public boolean onPreferenceClick(Preference preference) {
 				// TODO Auto-generated method stub
-				String url = "https://teamsourcery/ICSourcery/bios/T-dev.html";
+				String url = "https://teamsourcery.com/ICSourcery/bios/T-dev.html";
 				Intent i = new Intent(Intent.ACTION_VIEW);
 				i.setData(Uri.parse(url));
 				startActivity(i);				
