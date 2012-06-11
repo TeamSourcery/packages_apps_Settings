@@ -251,13 +251,88 @@ if (getPreferenceManager() != null) {
        tdevLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 			public boolean onPreferenceClick(Preference preference) {
 				// TODO Auto-generated method stub
-				String url = "https://teamsourcery.com/ICSourcery/bios/T-dev.html";
+				String url = "http://teamsourcery.com/ICSourcery/bios/T-dev.html";
 				Intent i = new Intent(Intent.ACTION_VIEW);
 				i.setData(Uri.parse(url));
 				startActivity(i);				
 				return true;
 			}
 		});
+
+ Preference eagleLink = (Preference) findPreference("eaglePref");
+       eagleLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				String url = "http://teamsourcery.com/ICSourcery/bios/eagle.html";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);				
+				return true;
+			}
+		});
+
+Preference vortexLink = (Preference) findPreference("vortexPref");
+       vortexLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				String url = "http://teamsourcery.com/ICSourcery/bios/vortex.html";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);				
+				return true;
+			}
+		});
+
+Preference barryLink = (Preference) findPreference("barryPref");
+       barryLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				String url = "http://teamsourcery.com/ICSourcery/bios/barry.html";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);				
+				return true;
+			}
+		});
+
+Preference xkapeLink = (Preference) findPreference("xkapePref");
+       xkapeLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				String url = "http://teamsourcery.com/ICSourcery/bios/xkape.html";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);				
+				return true;
+			}
+		});
+
+Preference atreuLink = (Preference) findPreference("atreuPref");
+       atreuLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				String url = "http://teamsourcery.com/ICSourcery/bios/atreu.html";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);				
+				return true;
+			}
+		});
+
+
+Preference cheechLink = (Preference) findPreference("cheechPref");
+       cheechLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				String url = "http://teamsourcery.com/ICSourcery/gnex/easteregg/C&C.mp4";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);				
+				return true;
+			}
+		});
+
+
 
   Preference websiteLink = (Preference) findPreference("websitePref");
         websiteLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {

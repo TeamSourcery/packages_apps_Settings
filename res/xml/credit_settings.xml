@@ -51,15 +51,15 @@
 <PreferenceCategory android:title="Team Sourcery">
 
             <PreferenceScreen android:title="Eagle1967" 
-			android:key="credits_google_key" 
+			android:key="eaglePref" 
 			android:summary="Development Lead and Manager of Team Sourcery , Rom Development" />
 
              <PreferenceScreen android:title="DeVorteX" 
-			android:key="credits_google_key"
+			android:key="vortexPref"
 			android:summary="CO-Rom Development, Tools app Guru!" />
 
                <PreferenceScreen android:title="Chizzele" 
-			android:key="credits_google_key" 
+			android:key="chizzPref" 
 			android:summary="Official Sourcery Boot animations Designer!, ICSourcery Wallpaper Designer, Public Relations, Support technician, Webpage  and Forum Development." /> 
 
               <PreferenceScreen android:title="T-dev" 
@@ -67,15 +67,15 @@
 			android:summary="IRC maintainer, Support Technician, Kernel Tester and maintainer." />
 
             <PreferenceScreen android:title="Alastrionia" 
-			android:key="credits_google_key" 
+			android:key="barryPref" 
 			android:summary="Lead ICSourcery Themer!" />
                  
           <PreferenceScreen android:title="xkape" 
-			android:key="credits_google_key" 
+			android:key="xkapePref" 
 			android:summary="Theme consultant , Theme development, Rom Tester! Unfortunately Xkape is busy with life but will return!" />
 
                 <PreferenceScreen android:title="atreyu381" 
-			android:key="credits_google_key" 
+			android:key="atreuPref" 
 			android:summary="Theme consultant , Theme development, Rom Tester, Battery mod Maker!" />
               
                  
@@ -196,7 +196,7 @@
 			android:summary="Kernels,BootAnimations,Mods,Themes,Soft Keys,Apps, ETC. are property of their developers as credited." />
 
              <PreferenceScreen android:title="Donations" 
-			android:key="credits_google_key" 
+			android:key="cheechPref" 
 			android:summary="Thankyou for all who have donated, All donations will go back into the rom either buying a device for a team member without or securing use of programs for sourcery." />
 
             <PreferenceScreen
@@ -206,7 +206,7 @@
 
 
 
-                <PreferenceScreen android:title="Donations" 
+                <PreferenceScreen android:title="Share the Love" 
 			android:key="credits_google_key" 
 			android:summary="Please remember to donate to contributers other than Team Sourcery also as without them we couldnt give you ICSourcery!!!!!!" />
             </PreferenceCategory>
