@@ -863,7 +863,7 @@
     <!-- Hint shown in dialog screen when password is too short -->
     <string name="lockpassword_password_too_short">Password must be at least %d characters</string>
     <!-- Hint shown in dialog screen when PIN is too short -->
-    <string name="lockpassword_pin_too_short">PIN must be at least %d characters</string>
+    <string name="lockpassword_pin_too_short">PIN must be at least %d digits</string>
 
     <!-- Hint shown after minimum password criteria is met -->
     <string name="lockpassword_press_continue">Touch Continue when done</string>
@@ -1207,6 +1207,8 @@
     <string name="wifi_menu_modify">Modify network</string>
     <!-- Wi-Fi settings. text displayed when Wi-Fi is off and network list is empty [CHAR LIMIT=50]-->
     <string name="wifi_empty_list_wifi_off">To see available networks, turn Wi-Fi on.</string>
+    <!-- Wi-Fi settings. text displayed when Wi-Fi is on and network list is empty [CHAR LIMIT=50]-->
+    <string name="wifi_empty_list_wifi_on">Wi-Fi on, but no Wi-Fi networks around.</string>
 
     <!-- Dialog for Access Points --> <skip />
     <!-- Label to show/hide advanced options -->
@@ -1400,6 +1402,10 @@
     <!-- Wifi AP settings-->
     <!-- Label for wifi tether checkbox. Toggles Access Point on/off -->
     <string name="wifi_tether_checkbox_text">Portable Wi-Fi hotspot</string>
+    <!-- Summary text when turning hotspot on -->
+    <string name="wifi_tether_starting">Turning hotspot on\u2026</string>
+    <!-- Summary text when turning hotspot off -->
+    <string name="wifi_tether_stopping">Turning off hotspot\u2026</string>
     <!-- Subtext for wifi tether checkbox on success -->
     <string name="wifi_tether_enabled_subtext">Portable hotspot <xliff:g id="network_ssid">%1$s</xliff:g> active</string>
     <!-- Subtext for wifi tether checkbox on failure -->
