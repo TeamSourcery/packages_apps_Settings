@@ -37,6 +37,9 @@
     <!-- Settings main menu category heading. System (Updates, data, accessibility, about phone). [CHAR LIMIT=40] -->
     <string name="header_category_system">SYSTEM</string>
 
+    <!-- Advanced Settings menu for MagicHat -->
+   <string name="header_category_advanced_settings">SOURCERY SETTINGS</string>
+
     <!-- Phone info -->
     <!-- Phone Info screen. Button label to turn on the radio . Only shown in diagnostic screen, so precise translation is not needed. -->
     <string name="turn_on_radio">Turn on radio</string>
@@ -660,7 +663,7 @@
     <!-- Text shown for summary of owner info setting [CHAR LIMIT=40]-->
     <string name="owner_info_settings_summary"></string>
     <!-- Hint text shown in owner info edit text [CHAR LIMIT=50] -->
-    <string name="owner_info_settings_edit_text_hint">Type text to display on the lock screen</string>
+    <string name="owner_info_settings_edit_text_hint">JBSourcery</string>
     <!-- Main Settings screen setting option title for the item to take you to the location screen -->
     <string name="location_settings_title">Location services</string>
     <!-- Main Settings screen setting option title for the item to take you to the security screen -->
@@ -1598,6 +1601,8 @@
     <string name="volume_media_description">Music, video, games, &amp; other media</string>
     <!-- Volume description for ringtone and notification volume -->
     <string name="volume_ring_description">Ringtone &amp; notifications</string>
+    <!-- Volume description for ringtone volume -->      
+    <string name="volume_ring_only_description">Ringtones</string>
     <!-- Volume description for notification volume -->
     <string name="volume_notification_description">Notifications</string>
     <!-- Volume description for alarm volume -->
@@ -1672,6 +1677,8 @@
     <string name="brightness">Brightness</string>
     <!-- Sound & display settings screen, setting option summary to change brightness -->
     <string name="brightness_summary">Adjust the brightness of the screen</string>
+   <!-- Sound & display settings screen, auto-dim backlight check box label -->
+    <string name="brightness_auto_dim_title">Auto-dim backlight</string>
     <!-- Sound & display settings screen, setting option name to change screen timeout -->
     <string name="screen_timeout">Sleep</string>
     <!-- Sound & display settings screen, setting option summary to change screen timeout -->
@@ -1707,6 +1714,11 @@
     <string name="summary_font_size" translatable="false">%1$s</string>
     <!-- [CHAR LIMIT=40] Sound & display settings screen, title of dialog for picking font size -->
     <string name="dialog_title_font_size">Font size</string>
+    <!-- Display settings screen, auto-hide statusbar check box label -->
+    <string name="statusbar_auto_hide_title">Auto-hide status bar</string>
+    <!-- Display settings screen, auto-hide statusbar check box summary -->
+    <string name="statusbar_auto_hide_summary">Allow status bar to hide while using a full-screen app</string>
+  
 
     <!-- SIM lock settings title -->
     <string name="sim_lock_settings">SIM card lock settings</string>
@@ -1774,6 +1786,12 @@
     <string name="kernel_version">Kernel version</string>
     <!-- About phone screen,  setting option name-->
     <string name="build_number">Build number</string>
+
+   <!-- About phone screen,  setting option name-->
+    <string name="build_date">Build date</string>
+   <!-- About phone screen,  setting option name-->
+    <string name="mod_version">Mod version</string>
+    <string name="mod_version_default">Unknown</string>
 
     <!-- About phone screen, show when a value of some status item is unavailable. -->
     <string name="device_info_not_available">Not available</string>
@@ -2843,7 +2861,7 @@
     <!-- Development Settings summary.  The summary of the item to take the user to Development settings.  Development settings are settings meant for application developers. -->
     <string name="development_settings_summary">Set options for app development</string>
     <!-- Setting checkbox title for Whether to enable USB debugging support on the phone. -->
-    <string name="enable_adb">USB debugging</string>
+    <string name="enable_adb">Android debugging</string>
     <!-- Setting checkbox summary for Whether to enable USB debugging support on the phone -->
     <string name="enable_adb_summary">Debug mode when USB is connected</string>
     <!-- Setting Checkbox title whether to keep the screen on when plugged in to a power source -->
@@ -4104,4 +4122,35 @@
     <string name="cell_broadcast_settings">Cell broadcasts</string>
     <!-- Cell Broadcast settings description [CHAR LIMIT=100] -->
     <string name="cell_broadcast_settings_summary">Select the types of emergency alerts to display.</string>
+
+    <!-- Credits -->
+    <string name="credit_settings">ICSourcery Credits</string>
+    <string name="credit_settings_title">ICSourcery Credits</string>
+    <string name="credit_settings_summary">This is what makes ICSourcery Possible</string>
+ 	 	
+   <!-- Donation Strings -->
+     <string name="pref_title_build_info">Donate</string>
+     <string name="adw_donate">Any Donations Will go back into the rom , No profits will be made by Team Sourcery. This Rom is for fun not profit!</string>
+    <!-- About device screen, version of Android. -->
+    <!-- About device screen, Cpu info. -->
+     <string name="cpu_info">CPU</string>
+    <!-- About phone screen, Free memory info -->
+     <string name="mem_info">Memory</string>
+    <!-- Sourcery Settings main menu category heading.  [CHAR LIMIT=40] -->
+ 	 	
+    <string name="header_category_sourcery">ICSourcery</string>
+    <!-- Title of Sourcery settings entry in the left top level menu -->
+ 	 	
+    <string name="sourcery_settings_title">ICSourcery Modifications!</string>
+
+    <!-- MagicHat Settings title -->
+
+    <string name="magichat_settings_title">ICSourcery Tools</string>
+    <!-- Category names for MagicHat Settings -->
+ 	
+    <!-- Sourcery Settings main menu category heading.  [CHAR LIMIT=40] -->
+ 	 	
+    <string name="header_category_galaxy_nexus">Magic Options</string>
+    <string name="link_volume_ringtones">Link volumes</string>
+    <string name="link_volume_mutes">Link mute states</string>
 </resources>

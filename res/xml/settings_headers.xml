@@ -57,6 +57,41 @@
         android:fragment="com.android.settings.WirelessSettings"
         android:icon="@drawable/empty_icon" />
 
+   <!-- Sourcery Settings -->
+    <header android:title="@string/header_category_sourcery" />
+    
+    <!-- Sourcery: Settings -->
+    <header
+        android:id="@+id/sourcery_settings"
+        android:title="@string/sourcery_settings_title"
+        android:icon="@drawable/ic_settings_sourcery">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.sourcery.icscontrol"
+            android:targetClass="com.sourcery.icscontrol.ICSControlActivity" />
+    </header>
+    
+       
+    <!-- Advanced Settings -->
+ 	
+  <header
+        android:id="@+id/magichat_settings"
+        android:title="@string/magichat_settings_title"
+        android:icon="@drawable/ic_settings_magichat">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.teamsourcery.sourcerytools"
+            android:targetClass="com.teamsourcery.sourcerytools.MainActivity" />
+    </header>
+  
+<!-- credits -->
+    <header
+        android:id="@+id/credit_settings"
+        android:icon="@drawable/ic_settings_credits"
+        android:fragment="com.android.settings.CreditSettings"
+        android:title="@string/credit_settings_title" />
+
+
     <!-- DEVICE -->
     <header android:title="@string/header_category_device" />
 
