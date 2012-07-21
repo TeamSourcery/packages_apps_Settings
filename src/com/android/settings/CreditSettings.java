@@ -332,6 +332,19 @@ Preference atreuLink = (Preference) findPreference("atreuPref");
 			}
 		});
 
+Preference johnnybLink = (Preference) findPreference("johnnybPref");
+       johnnybLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				String url = "http://teamsourcery.com/ICSourcery/bios/johnnyb.html";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);				
+				return true;
+			}
+		});
+
+
 
 Preference cheechLink = (Preference) findPreference("cheechPref");
        cheechLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {

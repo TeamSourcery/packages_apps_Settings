@@ -4124,9 +4124,9 @@
     <string name="cell_broadcast_settings_summary">Select the types of emergency alerts to display.</string>
 
     <!-- Credits -->
-    <string name="credit_settings">ICSourcery Credits</string>
-    <string name="credit_settings_title">ICSourcery Credits</string>
-    <string name="credit_settings_summary">This is what makes ICSourcery Possible</string>
+    <string name="credit_settings">JBSourcery Credits</string>
+    <string name="credit_settings_title">JBSourcery Credits</string>
+    <string name="credit_settings_summary">This is what makes JBSourcery Possible</string>
  	 	
    <!-- Donation Strings -->
      <string name="pref_title_build_info">Donate</string>
@@ -4138,14 +4138,14 @@
      <string name="mem_info">Memory</string>
     <!-- Sourcery Settings main menu category heading.  [CHAR LIMIT=40] -->
  	 	
-    <string name="header_category_sourcery">ICSourcery</string>
+    <string name="header_category_sourcery">JBSourcery</string>
     <!-- Title of Sourcery settings entry in the left top level menu -->
  	 	
-    <string name="sourcery_settings_title">ICSourcery Modifications!</string>
+    <string name="sourcery_settings_title">JBSourcery Modifications!</string>
 
     <!-- MagicHat Settings title -->
 
-    <string name="magichat_settings_title">ICSourcery Tools</string>
+    <string name="magichat_settings_title">JBSourcery Tools</string>
     <!-- Category names for MagicHat Settings -->
  	
     <!-- Sourcery Settings main menu category heading.  [CHAR LIMIT=40] -->

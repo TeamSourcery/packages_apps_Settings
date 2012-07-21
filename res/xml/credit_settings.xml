@@ -28,22 +28,22 @@
         </PreferenceScreen>
  <PreferenceScreen
                 android:key="websitePref"
-                android:title="ICSourcery Website"
+                android:title="Team Sourcery Website"
                 android:summary="For latest information!">
         </PreferenceScreen>
 
          <PreferenceScreen
                 android:key="forumPref"
-                android:title="ICSourcery Forums"
+                android:title="Team Sourcery Forums"
                 android:summary="Join in the fun !">
         </PreferenceScreen>
 
-       <PreferenceScreen android:title="ICSourcery Credits" 
+       <PreferenceScreen android:title="JBSourcery Credits" 
 		android:summary="SOURCERY INFO AND CREDITS">
 
             <PreferenceCategory android:title="Thanks from Team Sourcery">
 
-            <PreferenceScreen android:title="WHAT IS ICSOURCERY" 
+            <PreferenceScreen android:title="WHAT IS JBSOURCERY" 
 			android:key="credits_google_key" 
 			android:summary="A ROM Built using google source.  We try to make something Different and fun.  We offer many original features, as well as utilize some of the great works of others. Please read the live change log!" />
 
@@ -56,7 +56,7 @@
 
              <PreferenceScreen android:title="DeVorteX" 
 			android:key="vortexPref"
-			android:summary="CO-Rom Development, Tools app Guru!" />
+			android:summary="CO-Rom Development, Tools app Guru!, GitHub Magician" />
 
                <PreferenceScreen android:title="Chizzele" 
 			android:key="chizzPref" 
@@ -68,7 +68,7 @@
 
             <PreferenceScreen android:title="Alastrionia" 
 			android:key="barryPref" 
-			android:summary="Lead ICSourcery Themer!" />
+			android:summary="ICSourcery Themer!" />
                  
           <PreferenceScreen android:title="xkape" 
 			android:key="xkapePref" 
@@ -78,7 +78,9 @@
 			android:key="atreuPref" 
 			android:summary="Theme consultant , Theme development, Rom Tester, Battery mod Maker!" />
               
-                 
+                  <PreferenceScreen android:title="Johnnyb15613" 
+			android:key="johnnybPref" 
+			android:summary="Theme development, graphics assistant, " />
          
 
 
@@ -89,7 +91,7 @@
 
                 <PreferenceScreen android:title="Thanks to the community." 
 			android:key="credits_google_key" 
-			android:summary="Aokp, Codenameddroid, CyanogenMod(and code review), Greg-(from Elite), LiquidSmoothROMs, Peter Alfonso, Rootzboat, Zaphod-Beeblebrox" />
+			android:summary="Aokp, CyanogenMod(and code review), Greg-(from Elite), LiquidSmoothROMs, Peter Alfonso, Rootzboat, Zaphod-Beeblebrox" />
 
                <PreferenceScreen android:title="Special Thanks to AOKP." 
 			android:key="credits_google_key" 
@@ -104,10 +106,7 @@
 			android:key="teaminitPref" 
 			android:summary="For original build of Sourcery tools, WE thanks them for passing the source to us so we can continue upon their great work." />
 
-             <PreferenceScreen android:title="Codenamedroid , Greg(PE) , JBirdVegas " 
-			android:key="credits_ccroms_key" 
-			android:summary="Answering questions when needed, Pointing me towards great github pulls. thanks guys! " />
-
+            
                 <PreferenceScreen android:title="all the great developers" 
 			android:key="credits_ccroms_key" 
 			android:summary="We couldn't make ICSourcery without the help of the community. " />
