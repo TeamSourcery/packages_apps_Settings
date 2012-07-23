@@ -4144,7 +4144,7 @@
  	 	
    <!-- Donation Strings -->
      <string name="pref_title_build_info">Donate</string>
-     <string name="adw_donate">Any Donations Will go back into the rom , No profits will be made by Team Sourcery. This Rom is for fun not profit!</string>
+     <string name="adw_donate">All Donations go back into the rom..or used to purchase items for contests.</string>
     <!-- About device screen, version of Android. -->
     
     <!-- Sourcery Settings main menu category heading.  [CHAR LIMIT=40] -->
@@ -4152,7 +4152,7 @@
     <string name="header_category_sourcery">JBSourcery</string>
     <!-- Title of Sourcery settings entry in the left top level menu -->
  	 	
-    <string name="sourcery_settings_title">JBSourcery Modifications!</string>
+    <string name="sourcery_settings_title">JBSourcery Control Center</string>
 
     <!-- MagicHat Settings title -->
 
