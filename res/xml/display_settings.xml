@@ -23,6 +23,8 @@
                 android:title="@string/brightness"
                 android:dialogTitle="@string/brightness" />
 
+      
+
         <PreferenceScreen
                 android:key="wallpaper"
                 android:title="@string/wallpaper_settings_title"
