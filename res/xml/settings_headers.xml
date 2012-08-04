@@ -67,8 +67,8 @@
         android:icon="@drawable/ic_settings_sourcery">
         <intent
             android:action="android.intent.action.MAIN"
-            android:targetPackage="com.sourcery.icscontrol"
-            android:targetClass="com.sourcery.icscontrol.ICSControlActivity" />
+            android:targetPackage="com.sourcery.magiccontrol"
+            android:targetClass="com.sourcery.magiccontrol.MagicControlActivity" />
     </header>
     
        
