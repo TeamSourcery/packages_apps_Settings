@@ -4169,7 +4169,7 @@
     <string name="header_category_galaxy_nexus">Magic Options</string>
     <string name="link_volume_ringtones">Link volumes</string>
     <string name="link_volume_mutes">Link mute states</string>
-
+    <string name="link_volume_ringtones_toast">Make sure to change your volume to re-set your notification volume to match your ringtone volume.</string>
       <!-- Display | Backlight -->
     <string name="backlight_title">Custom backlight settings</string>
     <string name="backlight_settings">Automatic backlight</string>
