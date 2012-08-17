@@ -19,7 +19,11 @@
     android:title="@string/credit_settings_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
   
-        
+        <PreferenceScreen
+                android:key="infoPref"
+                android:title="JBSourcery News"
+                android:summary="links,shortcuts,directions,troubleshooting">
+        </PreferenceScreen>
  
         <PreferenceScreen
                 android:key="changelogPref"
@@ -45,7 +49,7 @@
 
             <PreferenceScreen android:title="WHAT IS JBSOURCERY" 
 			android:key="credits_google_key" 
-			android:summary="A ROM Built using google source.  We try to make something Different and fun.  We offer many original features, as well as utilize some of the great works of others. Please read the live change log!" />
+			android:summary="Sourcery has been bringing the most original rom since 2010." />
 
  </PreferenceCategory>
 <PreferenceCategory android:title="Team Sourcery">
@@ -72,7 +76,7 @@
                  
           <PreferenceScreen android:title="xkape" 
 			android:key="xkapePref" 
-			android:summary="Theme consultant , Theme development, Rom Tester! Unfortunately Xkape is busy with life but will return!" />
+			android:summary="Theme consultant , Theme development, Rom Tester! He is back i havent figured out in what capacity yet :)" />
 
                 <PreferenceScreen android:title="atreyu381" 
 			android:key="atreuPref" 
@@ -95,7 +99,7 @@
 
                <PreferenceScreen android:title="Special Thanks to AOKP." 
 			android:key="credits_google_key" 
-			android:summary="For Rom control which we used to base sourcery modifications from. " />
+			android:summary="For Rom control which we used to base sourcery modifications from. And so much more!" />
 
 
             </PreferenceCategory>
@@ -116,10 +120,6 @@
 			android:summary="For allowing us to use their great APEX Launcher as base Launcher of ICSourcery!" />
 
  
-<PreferenceScreen android:title="buckmarble" 
-			android:key="buckmarblePref" 
-			android:summary="Testing, suggestions, some themeing, and repo testing!" />
-
                             
                  <PreferenceScreen android:title="Stale Bread" 
 			android:key="credits_google_key" 

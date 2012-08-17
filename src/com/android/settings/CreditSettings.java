@@ -100,6 +100,18 @@ if (getPreferenceManager() != null) {
 			}
 		});
 
+         Preference infoLink = (Preference) findPreference("infoPref");
+        infoLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				String url = "http://www.teamsourcery.com/ICSourcery/changelog/info.html";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);				
+				return true;
+			}
+		});
+
         Preference changelogLink = (Preference) findPreference("changelogPref");
         changelogLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 			public boolean onPreferenceClick(Preference preference) {
@@ -124,17 +136,7 @@ if (getPreferenceManager() != null) {
 			}
 		});
 
-            Preference buckmarbleLink = (Preference) findPreference("buckmarblePref");
-        buckmarbleLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
-			public boolean onPreferenceClick(Preference preference) {
-				// TODO Auto-generated method stub
-				String url = "http://maverickrom.us.to/";
-				Intent i = new Intent(Intent.ACTION_VIEW);
-				i.setData(Uri.parse(url));
-				startActivity(i);				
-				return true;
-			}
-		});
+          
 
               Preference thepysntystLink = (Preference) findPreference("thepysntystPref");
         thepysntystLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
