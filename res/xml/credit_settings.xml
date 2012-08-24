@@ -24,6 +24,12 @@
                 android:title="JBSourcery News"
                 android:summary="links,shortcuts,directions,troubleshooting">
         </PreferenceScreen>
+
+       <PreferenceScreen
+                android:key="bugPref"
+                android:title="Bug and Enhancement Center"
+                android:summary="Please file bugs or feature requests here.">
+        </PreferenceScreen>
  
         <PreferenceScreen
                 android:key="changelogPref"

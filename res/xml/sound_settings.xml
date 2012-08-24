@@ -37,6 +37,12 @@
             android:key="quiet_hours"
             android:fragment="com.android.settings.QuietHours"
             android:title="@string/quiet_hours_title" />
+   
+      <CheckBoxPreference
+ 	    android:key="safe_headset_restore"
+            android:title="@string/safe_headset_restore_title"
+            android:summary="@string/safe_headset_restore_summary"
+            android:defaultValue="true" />
 
     <PreferenceCategory
             android:key="category_calls_and_notification"

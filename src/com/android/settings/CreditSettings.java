@@ -100,11 +100,23 @@ if (getPreferenceManager() != null) {
 			}
 		});
 
-         Preference infoLink = (Preference) findPreference("infoPref");
+          Preference infoLink = (Preference) findPreference("infoPref");
         infoLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 			public boolean onPreferenceClick(Preference preference) {
 				// TODO Auto-generated method stub
 				String url = "http://www.teamsourcery.com/ICSourcery/changelog/info.html";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);				
+				return true;
+			}
+		});
+
+         Preference bugLink = (Preference) findPreference("bugPref");
+        bugLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				String url = "http://code.google.com/p/teamsourcery/issues/list";
 				Intent i = new Intent(Intent.ACTION_VIEW);
 				i.setData(Uri.parse(url));
 				startActivity(i);				
