@@ -55,7 +55,7 @@
 
             <PreferenceScreen android:title="WHAT IS JBSOURCERY" 
 			android:key="credits_google_key" 
-			android:summary="Sourcery has been bringing the most original rom since 2010." />
+			android:summary="Sourcery has been bringing the most original rom since 2010. There is no rom like Sourcery!!" />
 
  </PreferenceCategory>
 <PreferenceCategory android:title="Team Sourcery">
@@ -68,9 +68,13 @@
 			android:key="vortexPref"
 			android:summary="CO-Rom Development, Tools app Guru!, GitHub Magician" />
 
+               <PreferenceScreen android:title="Morfic" 
+			android:key="morficPref"
+			android:summary="Kernel Specialist" />
+
                <PreferenceScreen android:title="Chizzele" 
 			android:key="chizzPref" 
-			android:summary="Official Sourcery Boot animations Designer!, ICSourcery Wallpaper Designer, Public Relations, Support technician, Webpage  and Forum Development." /> 
+			android:summary="Official Sourcery Boot animations Designer!, JBSourcery Wallpaper Designer, Public Relations, Support technician, Webpage  and Forum Development." /> 
 
               <PreferenceScreen android:title="T-dev" 
 			android:key="tdevPref" 
@@ -78,7 +82,11 @@
 
             <PreferenceScreen android:title="Alastrionia" 
 			android:key="barryPref" 
-			android:summary="ICSourcery Themer!" />
+			android:summary="JBSourcery Themer!" />
+
+            <PreferenceScreen android:title="Johnnyb15613" 
+			android:key="johnnybPref" 
+			android:summary="Theme development, graphics assistant, " />
                  
           <PreferenceScreen android:title="xkape" 
 			android:key="xkapePref" 
@@ -88,10 +96,7 @@
 			android:key="atreuPref" 
 			android:summary="Theme consultant , Theme development, Rom Tester, Battery mod Maker!" />
               
-                  <PreferenceScreen android:title="Johnnyb15613" 
-			android:key="johnnybPref" 
-			android:summary="Theme development, graphics assistant, " />
-         
+                        
 
 
             </PreferenceCategory>
@@ -119,11 +124,11 @@
             
                 <PreferenceScreen android:title="all the great developers" 
 			android:key="credits_ccroms_key" 
-			android:summary="We couldn't make ICSourcery without the help of the community. " />
+			android:summary="We couldn't make JBSourcery without the help of the community. " />
 
  <PreferenceScreen android:title="Android Does" 
 			android:key="androiddoesPref" 
-			android:summary="For allowing us to use their great APEX Launcher as base Launcher of ICSourcery!" />
+			android:summary="For allowing us to use their great APEX Launcher as base Launcher of JBSourcery!" />
 
  
                             
@@ -196,8 +201,8 @@
        
               <PreferenceCategory android:title="Other Credits">
 
-              <PreferenceScreen android:title="ICSourcery Tools" 
-			android:key="credits_google_key" 
+              <PreferenceScreen android:title="JBSourcery Tools" 
+			android:key="freebirdPref" 
 			android:summary="Kernels,BootAnimations,Mods,Themes,Soft Keys,Apps, ETC. are property of their developers as credited." />
 
              <PreferenceScreen android:title="Donations" 
@@ -206,14 +211,14 @@
 
             <PreferenceScreen
                 android:key="githubPref"
-                android:title="ICSourcery Source Code"
-                android:summary="Yes ICSourcery is now hosted on Github." />
+                android:title="JBSourcery Source Code"
+                android:summary="Yes JBSourcery is now hosted on Github." />
 
 
 
                 <PreferenceScreen android:title="Share the Love" 
 			android:key="credits_google_key" 
-			android:summary="Please remember to donate to contributers other than Team Sourcery also as without them we couldnt give you ICSourcery!!!!!!" />
+			android:summary="Please remember to donate to contributers other than Team Sourcery also as without them we couldnt give you JBSourcery!!!!!!" />
             </PreferenceCategory>
 
         <PreferenceCategory android:title="Donate">

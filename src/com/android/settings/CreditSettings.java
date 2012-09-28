@@ -112,7 +112,7 @@ if (getPreferenceManager() != null) {
 			}
 		});
 
-         Preference bugLink = (Preference) findPreference("bugPref");
+          Preference bugLink = (Preference) findPreference("bugPref");
         bugLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 			public boolean onPreferenceClick(Preference preference) {
 				// TODO Auto-generated method stub
@@ -278,6 +278,30 @@ if (getPreferenceManager() != null) {
 			public boolean onPreferenceClick(Preference preference) {
 				// TODO Auto-generated method stub
 				String url = "http://teamsourcery.com/ICSourcery/bios/eagle.html";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);				
+				return true;
+			}
+		});
+
+ Preference morficLink = (Preference) findPreference("morficPref");
+        morficLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				String url = "http://www.derkernel.com/bio.php";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);				
+				return true;
+			}
+		});
+
+  Preference freebirdLink = (Preference) findPreference("freebirdPref");
+        freebirdLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				String url = "http://www.youtube.com/watch?v=N9sGd-JLvNA&feature=related";
 				Intent i = new Intent(Intent.ACTION_VIEW);
 				i.setData(Uri.parse(url));
 				startActivity(i);				
