@@ -54,24 +54,29 @@
             <PreferenceCategory android:title="Thanks from Team Sourcery">
 
             <PreferenceScreen android:title="WHAT IS JBSOURCERY" 
-			android:key="credits_google_key" 
-			android:summary="Sourcery has been bringing the most original rom since 2010. There is no rom like Sourcery!!" />
+			android:key="jokePref" 
+			android:summary="Sourcery is just the funnest and most original rom with the greatest team around!" />
 
  </PreferenceCategory>
 <PreferenceCategory android:title="Team Sourcery">
 
             <PreferenceScreen android:title="Eagle1967" 
 			android:key="eaglePref" 
-			android:summary="Development Lead and Manager of Team Sourcery , Rom Development" />
+			android:summary="Development Lead and Manager of Team Sourcery , Rom Development, Idea man!" />
 
              <PreferenceScreen android:title="DeVorteX" 
 			android:key="vortexPref"
 			android:summary="CO-Rom Development, Tools app Guru!, GitHub Magician" />
 
+             <PreferenceScreen android:title="MyComputerDoctor" 
+			android:key="doctorPref"
+			android:summary="C0-Rom Development, Graphics Specialist" />
+
                <PreferenceScreen android:title="Morfic" 
 			android:key="morficPref"
 			android:summary="Kernel Specialist" />
 
+               
                <PreferenceScreen android:title="Chizzele" 
 			android:key="chizzPref" 
 			android:summary="Official Sourcery Boot animations Designer!, JBSourcery Wallpaper Designer, Public Relations, Support technician, Webpage  and Forum Development." /> 
@@ -87,26 +92,24 @@
             <PreferenceScreen android:title="Johnnyb15613" 
 			android:key="johnnybPref" 
 			android:summary="Theme development, graphics assistant, " />
+
+          <PreferenceScreen android:title="atreyu381" 
+			android:key="atreuPref" 
+			android:summary="Theme consultant , Theme development, Rom Tester, Battery mod Maker!" />
                  
           <PreferenceScreen android:title="xkape" 
 			android:key="xkapePref" 
-			android:summary="Theme consultant , Theme development, Rom Tester! He is back i havent figured out in what capacity yet :)" />
+			android:summary="Theme consultant , Theme development, Rom Tester! " />
 
-                <PreferenceScreen android:title="atreyu381" 
-			android:key="atreuPref" 
-			android:summary="Theme consultant , Theme development, Rom Tester, Battery mod Maker!" />
-              
-                        
-
-
+      
             </PreferenceCategory>
 
 
             <PreferenceCategory android:title="Github Pulls">
 
                 <PreferenceScreen android:title="Thanks to the community." 
-			android:key="credits_google_key" 
-			android:summary="Aokp, CyanogenMod(and code review), Greg-(from Elite), LiquidSmoothROMs, Peter Alfonso, Rootzboat, Zaphod-Beeblebrox" />
+			android:key="musicPref" 
+			android:summary="Just too many to list anymore :) But credited at our github and thanks everyone!" />
 
                <PreferenceScreen android:title="Special Thanks to AOKP." 
 			android:key="credits_google_key" 
@@ -190,7 +193,7 @@
               <PreferenceCategory android:title="We attempt to give all credits.">
 
 <PreferenceScreen android:title="Please view change log" 
-			android:key="credits_google_key" 
+			android:key="featurePref" 
 			android:summary="For complete credits and thanks." />
 
                 <PreferenceScreen android:title="If we missed you" 

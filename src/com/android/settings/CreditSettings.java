@@ -104,7 +104,7 @@ if (getPreferenceManager() != null) {
         infoLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 			public boolean onPreferenceClick(Preference preference) {
 				// TODO Auto-generated method stub
-				String url = "http://www.teamsourcery.com/ICSourcery/changelog/info.html";
+				String url = "http://www.factoryrom.com/sourcery/info.html";
 				Intent i = new Intent(Intent.ACTION_VIEW);
 				i.setData(Uri.parse(url));
 				startActivity(i);				
@@ -128,7 +128,7 @@ if (getPreferenceManager() != null) {
         changelogLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 			public boolean onPreferenceClick(Preference preference) {
 				// TODO Auto-generated method stub
-				String url = "http://www.teamsourcery.com/ICSourcery/changelog/icsourcery-credits.html";
+				String url = "http://www.factoryrom.com/sourcery/credits.html";
 				Intent i = new Intent(Intent.ACTION_VIEW);
 				i.setData(Uri.parse(url));
 				startActivity(i);				
@@ -174,6 +174,43 @@ if (getPreferenceManager() != null) {
 				return true;
 			}
 		});
+
+            Preference jokeLink = (Preference) findPreference("jokePref");
+        jokeLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				String url = "http://www.ajokeaday.com/ChisteDelDia.asp";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);				
+				return true;
+			}
+		});
+
+            Preference featureLink = (Preference) findPreference("featurePref");
+        featureLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				String url = "http://www.factoryrom.com/sourcery/features.html";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);				
+				return true;
+			}
+		});
+
+           Preference doctorLink = (Preference) findPreference("doctorPref");
+        doctorLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				String url = "http://www.factoryrom.com/sourcery/mycomputerdoctor.html";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);				
+				return true;
+			}
+		});
+
 
            Preference kernelsLink = (Preference) findPreference("kernelsPref");
        kernelsLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
@@ -301,7 +338,19 @@ if (getPreferenceManager() != null) {
         freebirdLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 			public boolean onPreferenceClick(Preference preference) {
 				// TODO Auto-generated method stub
-				String url = "http://www.youtube.com/watch?v=N9sGd-JLvNA&feature=related";
+				String url = "http://m.youtube.com/#/watch?v=CkTQUtx818w&desktop_uri=%2Fwatch%3Fv%3DCkTQUtx818w";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);				
+				return true;
+			}
+		});
+
+    Preference musicLink = (Preference) findPreference("musicPref");
+        musicLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				String url = "http://www.youtube.com/watch?v=zCeGCSvueM8&feature=related";
 				Intent i = new Intent(Intent.ACTION_VIEW);
 				i.setData(Uri.parse(url));
 				startActivity(i);				
