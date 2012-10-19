@@ -16,7 +16,6 @@
 
 package com.android.settings;
 
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.ContentQueryMap;
 import android.content.ContentResolver;
@@ -103,20 +102,6 @@ public class LocationSettings extends SettingsPreferenceFragment
         mNetwork = (CheckBoxPreference) root.findPreference(KEY_LOCATION_NETWORK);
         mGps = (CheckBoxPreference) root.findPreference(KEY_LOCATION_GPS);
         mAssistedGps = (CheckBoxPreference) root.findPreference(KEY_ASSISTED_GPS);
-        if (GoogleLocationSettingHelper.isAvailable(getActivity())) {
-            // GSF present, Add setting for 'Use My Location'
-            CheckBoxPreference useLocation = new CheckBoxPreference(getActivity());
-            useLocation.setKey(KEY_USE_LOCATION);
-            useLocation.setTitle(R.string.use_location_title);
-            useLocation.setSummary(R.string.use_location_summary);
-            useLocation.setChecked(
-                    GoogleLocationSettingHelper.getUseLocationForServices(getActivity())
-                    == GoogleLocationSettingHelper.USE_LOCATION_FOR_SERVICES_ON);
-            useLocation.setPersistent(false);
-            useLocation.setOnPreferenceChangeListener(this);
-            getPreferenceScreen().addPreference(useLocation);
-            mUseLocation = useLocation;
-        }
         //add BT gps devices
         mGPSBTPref = (ListPreference) findPreference("location_gps_source");
         ArrayList<CharSequence> entries = new ArrayList<CharSequence>();
@@ -217,19 +202,24 @@ public class LocationSettings extends SettingsPreferenceFragment
         createPreferenceHierarchy();
     }
 
-    public boolean onPreferenceChange(Preference preference, Object value) {
-        if (preference == mUseLocation) {
-            boolean newValue = (value == null ? false : (Boolean) value);
-            GoogleLocationSettingHelper.setUseLocationForServices(getActivity(), newValue);
-            // We don't want to change the value immediately here, since the user may click
-            // disagree in the dialog that pops up. When the activity we just launched exits, this
-            // activity will be restated and the new value re-read, so the checkbox will get its
-            // new value then.
-            return false;
-        }  else if (preference == mGPSBTPref) {
+    /** Enable or disable all providers when the master toggle is changed. */
+    private void onToggleLocationAccess(boolean checked) {
+        final ContentResolver cr = getContentResolver();
+        Settings.Secure.setLocationProviderEnabled(cr,
+                LocationManager.GPS_PROVIDER, checked);
+        Settings.Secure.setLocationProviderEnabled(cr,
+                LocationManager.NETWORK_PROVIDER, checked);
+        updateLocationToggles();
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference pref, Object newValue) {
+        if (pref.getKey().equals(KEY_LOCATION_TOGGLE)) {
+            onToggleLocationAccess((Boolean) newValue);
+        } else if (pref == mGPSBTPref) {
             String oldPref = Settings.System.getString(getContentResolver(),
                     Settings.Secure.EXTERNAL_GPS_BT_DEVICE);
-            String newPref = value == null ? "0" : (String) value;
+            String newPref = newValue == null ? "0" : (String) newValue;
             // "0" represents the internal GPS.
             Settings.System.putString(getContentResolver(), Settings.Secure.EXTERNAL_GPS_BT_DEVICE,
                     newPref);
@@ -242,25 +232,12 @@ public class LocationSettings extends SettingsPreferenceFragment
                         getResources().getString(R.string.location_gps_source_notification),
                         Toast.LENGTH_LONG).show();
             }
-
-	    @Override
-    public boolean onPreferenceChange(Preference pref, Object newValue) {
-        if (pref.getKey().equals(KEY_LOCATION_TOGGLE)) {
-            onToggleLocationAccess((Boolean) newValue);
         }
+
         return true;
     }
-}
 
-    /** Enable or disable all providers when the master toggle is changed. */
-    private void onToggleLocationAccess(boolean checked) {
-        final ContentResolver cr = getContentResolver();
-        Settings.Secure.setLocationProviderEnabled(cr,
-                LocationManager.GPS_PROVIDER, checked);
-        Settings.Secure.setLocationProviderEnabled(cr,
-                LocationManager.NETWORK_PROVIDER, checked);
-        updateLocationToggles();
-    }
+}
 
 class WrappingSwitchPreference extends SwitchPreference {
 
@@ -305,3 +282,4 @@ class WrappingCheckBoxPreference extends CheckBoxPreference {
         }
     }
 }
+
