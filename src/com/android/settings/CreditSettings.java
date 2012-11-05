@@ -199,17 +199,7 @@ if (getPreferenceManager() != null) {
 			}
 		});
 
-           Preference doctorLink = (Preference) findPreference("doctorPref");
-        doctorLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
-			public boolean onPreferenceClick(Preference preference) {
-				// TODO Auto-generated method stub
-				String url = "http://www.factoryrom.com/sourcery/mycomputerdoctor.html";
-				Intent i = new Intent(Intent.ACTION_VIEW);
-				i.setData(Uri.parse(url));
-				startActivity(i);				
-				return true;
-			}
-		});
+          
 
 
            Preference kernelsLink = (Preference) findPreference("kernelsPref");
