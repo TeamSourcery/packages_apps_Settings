@@ -413,33 +413,6 @@
         <item>2</item>
     </string-array>
 
-     <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi region code. -->
-    <string-array name="wifi_countrycode_entries">
-        <item>United States</item>
-        <item>Canada, Taiwan</item>
-        <item>Germany</item>
-        <item>Europe</item>
-        <item>Japan, Russia</item>
-        <item>Australia</item>
-        <item>China</item>
-        <item>Korea</item>
-        <item>Turkey</item>
-        <item>Singapore</item>
-    </string-array>
-
-    <string-array name="wifi_countrycode_values" translatable="false">
-        <item>US</item>
-        <item>CA</item>
-        <item>DE</item>
-        <item>GB</item>
-        <item>JP</item>
-        <item>AU</item>
-        <item>CN</item>
-        <item>KR</item>
-        <item>TR</item>
-        <item>SG</item>
-    </string-array>
-
 
     <!-- Display options for UsageStats class -->
     <string-array name="usage_stats_display_order_types">
@@ -679,6 +652,40 @@
         <item>10</item>
     </string-array>
 
+    <!-- Titles for overlay display devices preference. [CHAR LIMIT=35] -->
+    <string-array name="overlay_display_devices_entries">
+        <item>None</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280x720 tvdpi and 1920x1080 xhdpi</item>
+    </string-array>
+
+    <!-- Values for overlay display devices preference. -->
+    <string-array name="overlay_display_devices_values" translatable="false" >
+        <item></item>
+        <item>720x480/160</item>
+        <item>1280x720/213</item>
+        <item>1920x1080/320</item>
+        <item>1280x720/213;1920x1080/320</item>
+    </string-array>
+
+    <!-- Titles for OpenGL traces preference. [CHAR LIMIT=35] -->
+    <string-array name="enable_opengl_traces_entries">
+        <item>None</item>
+        <item>Logcat</item>
+        <item>Systrace (Graphics)</item>
+        <item>Call stack on glGetError</item>
+    </string-array>
+
+    <!-- Values for OpenGL traces preference. -->
+    <string-array name="enable_opengl_traces_values" translatable="false" >
+        <item>0</item>
+        <item>1</item>
+        <item>systrace</item>
+        <item>error</item>
+    </string-array>
+
     <!-- Titles for app process limit preference. [CHAR LIMIT=35] -->
     <string-array name="app_process_limit_entries">
         <item>Standard limit</item>
@@ -756,172 +763,26 @@
         <item>1</item>
     </string-array>
 
- <!-- Arrays required by Automatic Backlight. -->
-    <string-array name="entries_light_filter_window">
-        <item>2 s</item>
-        <item>5 s</item>
-        <item>10 s</item>
-        <item>20 s</item>
-        <item>30 s</item>
-        <item>60 s</item>
+    <!-- Values for premium SMS permission selector [CHAR LIMIT=30] -->
+    <string-array name="security_settings_premium_sms_values">
+        <!-- Ask user before sending to premium SMS short code. -->
+        <item>Ask</item>
+        <!-- Never allow app to send to premium SMS short code. -->
+        <item>Never allow</item>
+        <!-- Always allow app to send to premium SMS short code. -->
+        <item>Always allow</item>
     </string-array>
-
-    <string-array name="values_light_filter_window" translatable="false">
-        <item>2000</item>
-        <item>5000</item>
-        <item>10000</item>
-        <item>20000</item>
-        <item>30000</item>
-        <item>60000</item>
-    </string-array>
-
-    <string-array name="entries_light_filter_reset">
-        <item>Disabled</item>
-        <item>400 lux</item>
-        <item>500 lux</item>
-        <item>600 lux</item>
-        <item>700 lux</item>
-        <item>800 lux</item>
-        <item>900 lux</item>
-        <item>1000 lux</item>
-        <item>1500 lux</item>
-        <item>2000 lux</item>
-        <item>2500 lux</item>
-    </string-array>
-
-    <string-array name="values_light_filter_reset" translatable="false">
-        <item>-1</item>
-        <item>400</item>
-        <item>500</item>
-        <item>600</item>
-        <item>700</item>
-        <item>800</item>
-        <item>900</item>
-        <item>1000</item>
-        <item>1500</item>
-        <item>2000</item>
-        <item>2500</item>
-    </string-array>
-
-    <string-array name="entries_light_filter_interval">
-        <item>0.5 s</item>
-        <item>1 s</item>
-        <item>2 s</item>
-        <item>5 s</item>
-        <item>10 s</item>
-    </string-array>
-
-    <string-array name="values_light_filter_interval" translatable="false">
-        <item>500</item>
-        <item>1000</item>
-        <item>2000</item>
-        <item>5000</item>
-        <item>10000</item>
-    </string-array>
-
-    <string-array name="entries_light_levels_dim">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>8</item>
-        <item>10</item>
-        <item>12</item>
-        <item>14</item>
-        <item>16</item>
-        <item>18</item>
-        <item>20 (default)</item>
-        <item>22</item>
-        <item>24</item>
-        <item>26</item>
-    </string-array>
-
-    <string-array name="values_light_levels_dim" translatable="false">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>8</item>
-        <item>10</item>
-        <item>12</item>
-        <item>14</item>
-        <item>16</item>
-        <item>18</item>
-        <item>20</item>
-        <item>22</item>
-        <item>24</item>
-        <item>26</item>
-    </string-array>
-
-    <string-array name="entries_light_decrease_hysteresis">
-        <item>0 %</item>
-        <item>10 %</item>
-        <item>20 %</item>
-        <item>30 %</item>
-        <item>40 %</item>
-        <item>50 %</item>
-        <item>60 %</item>
-        <item>70 %</item>
-        <item>80 %</item>
-        <item>90 %</item>
-    </string-array>
-
-    <string-array name="values_light_decrease_hysteresis" translatable="false">
-        <item>0</item>
-        <item>10</item>
-        <item>20</item>
-        <item>30</item>
-        <item>40</item>
-        <item>50</item>
-        <item>60</item>
-        <item>70</item>
-        <item>80</item>
-        <item>90</item>
-    </string-array>
-
-     <string-array name="location_entries_gps_source">
-        <item>Use Internal GPS</item>
-    </string-array>
- 	
-    <string-array name="location_values_gps_source" translatable="false">
-       <item>0</item>
-    </string-array>
-
-   <string-array name="increasing_ring_interval_entries" translatable="false">
-        <item>@string/increasing_ring_interval_eachring</item>
-        <item>@string/increasing_ring_interval_half_second</item>
-        <item>@string/increasing_ring_interval_1second</item>
-        <item>@string/increasing_ring_interval_2seconds</item>
-        <item>@string/increasing_ring_interval_3seconds</item>
-        <item>@string/increasing_ring_interval_5seconds</item>
-        <item>@string/increasing_ring_interval_10seconds</item>
-    </string-array>
-
-    <integer-array name="increasing_ring_interval_values">
-        <item>0</item>
-        <item>500</item>
-        <item>1000</item>
-        <item>2000</item>
-        <item>3000</item>
-        <item>5000</item>
-        <item>10000</item>
-    </integer-array>
 
      <!-- NFC settings. -->
     <string-array name="nfc_polling_mode_entries">
-     <item>Screen off</item>
-     <item>Screen on, locked</item>
-     <item>Screen on, unlocked (default)</item>
+       <item>@string/nfc_polling_mode_screen_off</item>
+       <item>@string/nfc_polling_mode_screen_locked</item>
+       <item>@string/nfc_polling_mode_screen_unlocked</item>
     </string-array>
  
     <string-array name="nfc_polling_mode_values">
-     <item>1</item>
-     <item>2</item>
-     <item>3</item>
+       <item>1</item>
+       <item>2</item>
+       <item>3</item>
     </string-array>
-
 </resources>

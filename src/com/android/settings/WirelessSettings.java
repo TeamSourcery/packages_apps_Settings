@@ -26,6 +26,7 @@ import android.net.wifi.p2p.WifiP2pManager;
 import android.nfc.NfcAdapter;
 import android.os.Bundle;
 import android.os.SystemProperties;
+import android.os.UserHandle;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
@@ -41,7 +42,7 @@ import com.android.settings.nfc.NfcEnabler;
 import com.android.settings.NsdEnabler;
 
 public class WirelessSettings extends SettingsPreferenceFragment
-     implements Preference.OnPreferenceChangeListener {
+    implements Preference.OnPreferenceChangeListener {
 
     private static final String KEY_TOGGLE_AIRPLANE = "toggle_airplane";
     private static final String KEY_TOGGLE_NFC = "toggle_nfc";
@@ -63,7 +64,7 @@ public class WirelessSettings extends SettingsPreferenceFragment
     private NfcEnabler mNfcEnabler;
     private NfcAdapter mNfcAdapter;
     private NsdEnabler mNsdEnabler;
-    ListPreference mNfcPollingMode;
+    private ListPreference mNfcPollingMode;
 
     /**
      * Invoked on each preference click in this hierarchy, overrides
@@ -85,22 +86,24 @@ public class WirelessSettings extends SettingsPreferenceFragment
     }
 
     @Override
-     public boolean onPreferenceChange(Preference preference, Object newValue) {
-         if (preference == mNfcPollingMode) {
-             int newVal = Integer.parseInt((String) newValue);
-             return Settings.System.putInt(getActivity().getContentResolver(),
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mNfcPollingMode) {
+            int newVal = Integer.parseInt((String) newValue);
+            Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.NFC_POLLING_MODE, newVal);
+            updateNfcPolling();
+            return true;
         }
         return false;
-     }
+    }
 
     public static boolean isRadioAllowed(Context context, String type) {
         if (!AirplaneModeEnabler.isAirplaneModeOn(context)) {
             return true;
         }
         // Here we use the same logic in onCreate().
-        String toggleable = Settings.System.getString(context.getContentResolver(),
-                Settings.System.AIRPLANE_MODE_TOGGLEABLE_RADIOS);
+        String toggleable = Settings.Global.getString(context.getContentResolver(),
+                Settings.Global.AIRPLANE_MODE_TOGGLEABLE_RADIOS);
         return toggleable != null && toggleable.contains(type);
     }
 
@@ -109,6 +112,8 @@ public class WirelessSettings extends SettingsPreferenceFragment
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.wireless_settings);
+
+        final boolean isSecondaryUser = UserHandle.myUserId() != UserHandle.USER_OWNER;
 
         final Activity activity = getActivity();
         mAirplaneModePreference = (CheckBoxPreference) findPreference(KEY_TOGGLE_AIRPLANE);
@@ -119,7 +124,8 @@ public class WirelessSettings extends SettingsPreferenceFragment
         mNfcPollingMode = (ListPreference) findPreference(KEY_NFC_POLLING_MODE);
         mNfcPollingMode.setOnPreferenceChangeListener(this);
         mNfcPollingMode.setValue((Settings.System.getInt(activity.getContentResolver(),
-                 Settings.System.NFC_POLLING_MODE, 3)) + "");
+                Settings.System.NFC_POLLING_MODE, 3)) + "");
+        updateNfcPolling();
 
         mAirplaneModeEnabler = new AirplaneModeEnabler(activity, mAirplaneModePreference);
         mNfcEnabler = new NfcEnabler(activity, nfc, androidBeam, mNfcPollingMode);
@@ -128,35 +134,38 @@ public class WirelessSettings extends SettingsPreferenceFragment
         getPreferenceScreen().removePreference(nsd);
         //mNsdEnabler = new NsdEnabler(activity, nsd);
 
-        String toggleable = Settings.System.getString(activity.getContentResolver(),
-                Settings.System.AIRPLANE_MODE_TOGGLEABLE_RADIOS);
+        String toggleable = Settings.Global.getString(activity.getContentResolver(),
+                Settings.Global.AIRPLANE_MODE_TOGGLEABLE_RADIOS);
 
         //enable/disable wimax depending on the value in config.xml
-        boolean isWimaxEnabled = this.getResources().getBoolean(
+        boolean isWimaxEnabled = !isSecondaryUser && this.getResources().getBoolean(
                 com.android.internal.R.bool.config_wimaxEnabled);
         if (!isWimaxEnabled) {
             PreferenceScreen root = getPreferenceScreen();
             Preference ps = (Preference) findPreference(KEY_WIMAX_SETTINGS);
             if (ps != null) root.removePreference(ps);
         } else {
-            if (toggleable == null || !toggleable.contains(Settings.System.RADIO_WIMAX )
+            if (toggleable == null || !toggleable.contains(Settings.Global.RADIO_WIMAX )
                     && isWimaxEnabled) {
                 Preference ps = (Preference) findPreference(KEY_WIMAX_SETTINGS);
                 ps.setDependency(KEY_TOGGLE_AIRPLANE);
             }
         }
         // Manually set dependencies for Wifi when not toggleable.
-        if (toggleable == null || !toggleable.contains(Settings.System.RADIO_WIFI)) {
+        if (toggleable == null || !toggleable.contains(Settings.Global.RADIO_WIFI)) {
             findPreference(KEY_VPN_SETTINGS).setDependency(KEY_TOGGLE_AIRPLANE);
+        }
+        if (isSecondaryUser) { // Disable VPN
+            removePreference(KEY_VPN_SETTINGS);
         }
 
         // Manually set dependencies for Bluetooth when not toggleable.
-        if (toggleable == null || !toggleable.contains(Settings.System.RADIO_BLUETOOTH)) {
+        if (toggleable == null || !toggleable.contains(Settings.Global.RADIO_BLUETOOTH)) {
             // No bluetooth-dependent items in the list. Code kept in case one is added later.
         }
 
         // Manually set dependencies for NFC when not toggleable.
-        if (toggleable == null || !toggleable.contains(Settings.System.RADIO_NFC)) {
+        if (toggleable == null || !toggleable.contains(Settings.Global.RADIO_NFC)) {
             findPreference(KEY_TOGGLE_NFC).setDependency(KEY_TOGGLE_AIRPLANE);
             findPreference(KEY_ANDROID_BEAM_SETTINGS).setDependency(KEY_TOGGLE_AIRPLANE);
         }
@@ -165,14 +174,14 @@ public class WirelessSettings extends SettingsPreferenceFragment
         mNfcAdapter = NfcAdapter.getDefaultAdapter(activity);
         if (mNfcAdapter == null) {
             getPreferenceScreen().removePreference(nfc);
-            getPreferenceScreen().removePreference(androidBeam);
             getPreferenceScreen().removePreference(mNfcPollingMode);
+            getPreferenceScreen().removePreference(androidBeam);
             mNfcEnabler = null;
         }
 
         // Remove Mobile Network Settings if it's a wifi-only device.
-        if (Utils.isWifiOnly(getActivity())) {
-            getPreferenceScreen().removePreference(findPreference(KEY_MOBILE_NETWORK_SETTINGS));
+        if (isSecondaryUser || Utils.isWifiOnly(getActivity())) {
+            removePreference(KEY_MOBILE_NETWORK_SETTINGS);
         }
 
         // Enable Proxy selector settings if allowed.
@@ -186,7 +195,7 @@ public class WirelessSettings extends SettingsPreferenceFragment
         // Disable Tethering if it's not allowed or if it's a wifi-only device
         ConnectivityManager cm =
                 (ConnectivityManager) activity.getSystemService(Context.CONNECTIVITY_SERVICE);
-        if (!cm.isTetheringSupported()) {
+        if (isSecondaryUser || !cm.isTetheringSupported()) {
             getPreferenceScreen().removePreference(findPreference(KEY_TETHER_SETTINGS));
         } else {
             Preference p = findPreference(KEY_TETHER_SETTINGS);
@@ -207,11 +216,30 @@ public class WirelessSettings extends SettingsPreferenceFragment
         } catch (IllegalArgumentException ignored) {
             isCellBroadcastAppLinkEnabled = false;  // CMAS app not installed
         }
-        if (!isCellBroadcastAppLinkEnabled) {
+        if (isSecondaryUser || !isCellBroadcastAppLinkEnabled) {
             PreferenceScreen root = getPreferenceScreen();
             Preference ps = findPreference(KEY_CELL_BROADCAST_SETTINGS);
             if (ps != null) root.removePreference(ps);
         }
+    }
+
+    private void updateNfcPolling() {
+        int resId;
+        String value = Settings.System.getString(getContentResolver(),
+                Settings.System.NFC_POLLING_MODE);
+        String[] pollingArray = getResources().getStringArray(R.array.nfc_polling_mode_values);
+
+        if (pollingArray[0].equals(value)) {
+            resId = R.string.nfc_polling_mode_screen_off;
+            mNfcPollingMode.setValueIndex(0);
+        } else if (pollingArray[1].equals(value)) {
+            resId = R.string.nfc_polling_mode_screen_locked;
+            mNfcPollingMode.setValueIndex(1);
+        } else {
+            resId = R.string.nfc_polling_mode_screen_unlocked;
+            mNfcPollingMode.setValueIndex(2);
+        }
+        mNfcPollingMode.setSummary(getResources().getString(resId));
     }
 
     @Override

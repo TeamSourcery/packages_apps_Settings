@@ -32,17 +32,11 @@
         <intent android:targetPackage="com.android.musicfx"
                 android:targetClass="com.android.musicfx.ControlPanelPicker" />
     </Preference>
-
+    
     <PreferenceScreen
             android:key="quiet_hours"
             android:fragment="com.android.settings.QuietHours"
             android:title="@string/quiet_hours_title" />
-   
-      <CheckBoxPreference
- 	    android:key="safe_headset_restore"
-            android:title="@string/safe_headset_restore_title"
-            android:summary="@string/safe_headset_restore_summary"
-            android:defaultValue="true" />
 
     <PreferenceCategory
             android:key="category_calls_and_notification"
@@ -60,13 +54,6 @@
          android:key="vibrate_when_ringing"
          android:title="@string/vibrate_when_ringing_title"
          android:persistent="false" />
-
-     <com.android.settings.IncreasingRingPreference
-            android:key="increasing_ring"
-            android:title="@string/increasing_ring_title"
-            android:dialogTitle="@string/increasing_ring_title"
-            android:persistent="false"
-            android:streamType="ring" />
 
     <PreferenceCategory
             android:title="@string/sound_category_system_title"/>
@@ -100,22 +87,31 @@
             android:title="@string/haptic_feedback_enable_title"
             android:defaultValue="true" />
 
-   <CheckBoxPreference
-            android:key="volume_adjust_sounds"
-            android:title="@string/volume_adjust_sounds_enable_title"
-            android:summary="@string/volume_adjust_sounds_enable_summary"
-            android:persistent="true" />
-
-    <CheckBoxPreference
-        android:key="camera_sounds"
-        android:title="@string/camera_sounds_title"
-        android:summary="@string/camera_sounds_summary"
-        android:defaultValue="true" />
-
     <ListPreference
             android:key="emergency_tone"
             android:title="@string/emergency_tone_title"
             android:entries="@array/emergency_tone_entries"
             android:entryValues="@array/emergency_tone_values" />
+
+    <!-- Dock -->
+    <PreferenceCategory
+        android:key="dock_category"
+        android:title="@string/dock_settings"/>
+
+    <!-- Do not nest these, or removals in code will break -->
+    <PreferenceScreen
+        android:key="dock_audio"
+        android:title="@string/dock_audio_settings_title">
+        <CheckBoxPreference
+            android:title="@string/bluetooth_dock_settings_a2dp"
+            android:key="dock_audio_media_enabled"
+            android:enabled="true"
+            />
+    </PreferenceScreen>
+
+    <CheckBoxPreference
+        android:key="dock_sounds"
+        android:title="@string/dock_sounds_enable_title"
+        android:defaultValue="false" />
 
 </PreferenceScreen>
