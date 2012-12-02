@@ -4464,4 +4464,10 @@
     <string name="nfc_polling_mode_screen_locked">Screen on, locked</string>
     <string name="nfc_polling_mode_screen_unlocked">Screen on, unlocked (default)</string>
 
+   <!-- Volumes unlink -->
+    <string name="link_volume_ringtones">Link volumes</string>
+    <string name="link_volume_mutes">Link mute states</string>
+
+   
+
 </resources>
