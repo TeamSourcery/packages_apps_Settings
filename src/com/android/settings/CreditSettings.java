@@ -104,7 +104,7 @@ if (getPreferenceManager() != null) {
         infoLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 			public boolean onPreferenceClick(Preference preference) {
 				// TODO Auto-generated method stub
-				String url = "http://www.factoryrom.com/sourcery/info.html";
+				String url = "http://teamsourcery.com/features-and-change-log/#tabs-235-0-2";
 				Intent i = new Intent(Intent.ACTION_VIEW);
 				i.setData(Uri.parse(url));
 				startActivity(i);				
@@ -128,7 +128,7 @@ if (getPreferenceManager() != null) {
         changelogLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 			public boolean onPreferenceClick(Preference preference) {
 				// TODO Auto-generated method stub
-				String url = "http://www.factoryrom.com/sourcery/credits.html";
+				String url = "http://teamsourcery.com/features-and-change-log/#tabs-235-0-1";
 				Intent i = new Intent(Intent.ACTION_VIEW);
 				i.setData(Uri.parse(url));
 				startActivity(i);				
@@ -191,7 +191,7 @@ if (getPreferenceManager() != null) {
         featureLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 			public boolean onPreferenceClick(Preference preference) {
 				// TODO Auto-generated method stub
-				String url = "http://www.factoryrom.com/sourcery/features.html";
+				String url = "http://teamsourcery.com/features-and-change-log/#tabs-235-0-0";
 				Intent i = new Intent(Intent.ACTION_VIEW);
 				i.setData(Uri.parse(url));
 				startActivity(i);				
