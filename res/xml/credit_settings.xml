@@ -67,14 +67,8 @@
              <PreferenceScreen android:title="DeVorteX" 
 			android:key="vortexPref"
 			android:summary="CO-Rom Development, Tools app Guru!, GitHub Magician" />
-
-           
-               <PreferenceScreen android:title="Morfic" 
-			android:key="morficPref"
-			android:summary="Kernel Specialist" />
-
-               
-               <PreferenceScreen android:title="Chizzele" 
+                             
+            <PreferenceScreen android:title="Chizzele" 
 			android:key="chizzPref" 
 			android:summary="Official Sourcery Boot animations Designer!, JBSourcery Wallpaper Designer, Public Relations, Support technician, Webpage  and Forum Development." /> 
 
@@ -94,10 +88,7 @@
 			android:key="atreuPref" 
 			android:summary="Theme consultant , Theme development, Rom Tester, Battery mod Maker!" />
                  
-          <PreferenceScreen android:title="xkape" 
-			android:key="xkapePref" 
-			android:summary="Theme consultant , Theme development, Rom Tester! " />
-
+         
       
             </PreferenceCategory>
 

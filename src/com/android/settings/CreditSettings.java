@@ -312,18 +312,7 @@ if (getPreferenceManager() != null) {
 			}
 		});
 
- Preference morficLink = (Preference) findPreference("morficPref");
-        morficLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
-			public boolean onPreferenceClick(Preference preference) {
-				// TODO Auto-generated method stub
-				String url = "http://www.derkernel.com/bio.php";
-				Intent i = new Intent(Intent.ACTION_VIEW);
-				i.setData(Uri.parse(url));
-				startActivity(i);				
-				return true;
-			}
-		});
-
+ 
   Preference freebirdLink = (Preference) findPreference("freebirdPref");
         freebirdLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 			public boolean onPreferenceClick(Preference preference) {
@@ -385,17 +374,6 @@ Preference barryLink = (Preference) findPreference("barryPref");
 			}
 		});
 
-Preference xkapeLink = (Preference) findPreference("xkapePref");
-       xkapeLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
-			public boolean onPreferenceClick(Preference preference) {
-				// TODO Auto-generated method stub
-				String url = "http://teamsourcery.com/ICSourcery/bios/xkape.html";
-				Intent i = new Intent(Intent.ACTION_VIEW);
-				i.setData(Uri.parse(url));
-				startActivity(i);				
-				return true;
-			}
-		});
 
 Preference atreuLink = (Preference) findPreference("atreuPref");
        atreuLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
