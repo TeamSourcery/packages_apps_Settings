@@ -19,209 +19,205 @@
     android:title="@string/credit_settings_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
   
-        <PreferenceScreen
+<PreferenceScreen
                 android:key="infoPref"
                 android:title="JBSourcery News"
                 android:summary="links,shortcuts,directions,troubleshooting">
-        </PreferenceScreen>
+</PreferenceScreen>
 
-       <PreferenceScreen
+<PreferenceScreen
                 android:key="bugPref"
                 android:title="Bug and Enhancement Center"
                 android:summary="Please file bugs or feature requests here.">
-        </PreferenceScreen>
+</PreferenceScreen>
  
-        <PreferenceScreen
+<PreferenceScreen
                 android:key="changelogPref"
                 android:title="Live Credits and Change Log"
                 android:summary="See latest Credits">
-        </PreferenceScreen>
- <PreferenceScreen
+</PreferenceScreen>
+
+<PreferenceScreen
                 android:key="websitePref"
                 android:title="Team Sourcery Website"
                 android:summary="For latest information!">
-        </PreferenceScreen>
+</PreferenceScreen>
 
-         <PreferenceScreen
+<PreferenceScreen
                 android:key="forumPref"
                 android:title="Team Sourcery Forums"
                 android:summary="Join in the fun !">
-        </PreferenceScreen>
+</PreferenceScreen>
 
-       <PreferenceScreen android:title="JBSourcery Credits" 
-		android:summary="SOURCERY INFO AND CREDITS">
+<PreferenceScreen android:title="JBSourcery Credits" 
+                  android:summary="SOURCERY INFO AND CREDITS">
 
-            <PreferenceCategory android:title="Thanks from Team Sourcery">
+<PreferenceCategory android:title="Thanks from Team Sourcery">
 
-            <PreferenceScreen android:title="WHAT IS JBSOURCERY" 
-			android:key="jokePref" 
-			android:summary="Sourcery is just the funnest and most original rom with the greatest team around!" />
+<PreferenceScreen android:title="WHAT IS JBSOURCERY" 
+                  android:key="jokePref" 
+                  android:summary="Sourcery is the rom for customazation fanatic!" />
 
- </PreferenceCategory>
-
+</PreferenceCategory>
  
 <PreferenceCategory android:title="Team Sourcery">
 
-            <PreferenceScreen android:title="Eagle1967" 
-			android:key="eaglePref" 
-			android:summary="Development Lead and Manager of Team Sourcery , Rom Development, Idea man!" />
+<PreferenceScreen android:title="Eagle1967" 
+                  android:key="eaglePref" 
+                  android:summary="Development Lead and Manager of Team Sourcery , Rom Development, Idea man!" />
 
-             <PreferenceScreen android:title="DeVorteX" 
-			android:key="vortexPref"
-			android:summary="CO-Rom Development, Tools app Guru!, GitHub Magician" />
+<PreferenceScreen android:title="DeVorteX" 
+                  android:key="vortexPref"
+                  android:summary="CO-Rom Development, Tools app Guru!, GitHub Magician" />
                              
-            <PreferenceScreen android:title="Chizzele" 
-			android:key="chizzPref" 
-			android:summary="Official Sourcery Boot animations Designer!, JBSourcery Wallpaper Designer, Public Relations, Support technician, Webpage  and Forum Development." /> 
+<PreferenceScreen android:title="Chizzele" 
+                  android:key="chizzPref" 
+                  android:summary="Official Sourcery Boot animations Designer!, JBSourcery Wallpaper Designer, Public Relations, Support technician, Webpage  and Forum Development." /> 
 
-              <PreferenceScreen android:title="T-dev" 
-			android:key="tdevPref" 
-			android:summary="IRC maintainer, Support Technician, Kernel Tester and maintainer." />
+<PreferenceScreen android:title="T-dev" 
+                  android:key="tdevPref" 
+                  android:summary="IRC maintainer, Support Technician, Kernel Tester and maintainer." />
 
-            <PreferenceScreen android:title="Alastrionia" 
-			android:key="barryPref" 
-			android:summary="JBSourcery Themer!" />
+<PreferenceScreen android:title="Alastrionia" 
+                  android:key="barryPref" 
+                  android:summary="JBSourcery Themer!" />
 
-            <PreferenceScreen android:title="Johnnyb15613" 
-			android:key="johnnybPref" 
-			android:summary="Theme development, graphics assistant, " />
+<PreferenceScreen android:title="Johnnyb15613" 
+                  android:key="johnnybPref" 
+                  android:summary="Theme development, graphics assistant, " />
 
-          <PreferenceScreen android:title="atreyu381" 
-			android:key="atreuPref" 
-			android:summary="Theme consultant , Theme development, Rom Tester, Battery mod Maker!" />
-                 
-         
-      
-            </PreferenceCategory>
+<PreferenceScreen android:title="atreyu381" 
+                  android:key="atreuPref" 
+                  android:summary="Theme consultant , Theme development, Rom Tester, Battery mod Maker!" />
+  
+</PreferenceCategory>
 
+<PreferenceCategory android:title="Github Pulls">
 
-            <PreferenceCategory android:title="Github Pulls">
+<PreferenceScreen android:title="Thanks to the community." 
+                  android:key="musicPref" 
+                  android:summary="Just too many to list anymore :) But credited at our github and thanks everyone!" />
 
-                <PreferenceScreen android:title="Thanks to the community." 
-			android:key="musicPref" 
-			android:summary="Just too many to list anymore :) But credited at our github and thanks everyone!" />
+<PreferenceScreen android:title="Special Thanks to AOKP." 
+                  android:key="credits_google_key" 
+                  android:summary="For Rom control which we used to base sourcery modifications from. And so much more!" />
 
-               <PreferenceScreen android:title="Special Thanks to AOKP." 
-			android:key="credits_google_key" 
-			android:summary="For Rom control which we used to base sourcery modifications from. And so much more!" />
+</PreferenceCategory>
 
+<PreferenceCategory android:title="Special Thanks">
 
-            </PreferenceCategory>
-
-            <PreferenceCategory android:title="Special Thanks">
+<PreferenceScreen android:title="Special Thanks to BuckMarble" 
+		  android:key="credits_google_key" 
+		  android:summary="For the original source and assisting in my Learning for Sourcerizer Kernel!" />
 
 <PreferenceScreen android:title="Teaminit2winit" 
 			android:key="teaminitPref" 
 			android:summary="For original build of Sourcery tools, WE thanks them for passing the source to us so we can continue upon their great work." />
-
             
-                <PreferenceScreen android:title="all the great developers" 
-			android:key="credits_ccroms_key" 
-			android:summary="We couldn't make JBSourcery without the help of the community. " />
+<PreferenceScreen android:title="all the great developers" 
+                  android:key="credits_ccroms_key" 
+                  android:summary="We couldn't make JBSourcery without the help of the community. " />
 
- <PreferenceScreen android:title="Android Does" 
-			android:key="androiddoesPref" 
-			android:summary="For allowing us to use their great APEX Launcher as base Launcher of JBSourcery!" />
+<PreferenceScreen android:title="Android Does" 
+                  android:key="androiddoesPref" 
+                  android:summary="For allowing us to use their great APEX Launcher as base Launcher of JBSourcery!" />
 
-                  <PreferenceScreen android:title="MyComputerDoctor" 
-			android:key="doctor"
-			android:summary="JBSourcery BootAnimation, and the short time he spent with us. Good Luck." />
-
+<PreferenceScreen android:title="MyComputerDoctor" 
+                  android:key="doctor"
+                  android:summary="JBSourcery BootAnimation, and the short time he spent with us. Good Luck." />
                             
-                 <PreferenceScreen android:title="Stale Bread" 
-			android:key="credits_google_key" 
-			android:summary="For the awesome Animations, while his stuff can be found at XDA i havent found any recent activity." />
+<PreferenceScreen android:title="Stale Bread" 
+                  android:key="credits_google_key" 
+                  android:summary="For the awesome Animations, while his stuff can be found at XDA i havent found any recent activity." />
 
-                 <PreferenceScreen android:title="thepysntyst" 
-			android:key="thepysntystPref" 
-			android:summary="For the awesome Animations" />
+<PreferenceScreen android:title="thepysntyst" 
+                  android:key="thepysntystPref" 
+                  android:summary="For the awesome Animations" />
 
-                 <PreferenceScreen android:title="CJM" 
-			android:key="cjmPref" 
-			android:summary="For many of the great Wallpapers and pulldown mods.." />
+<PreferenceScreen android:title="CJM" 
+                  android:key="cjmPref" 
+                  android:summary="For many of the great Wallpapers and pulldown mods.." />
 
 <PreferenceScreen android:title="CJM,Cynkrzy,Atticus" 
-			android:key="credits_google_key" 
-			android:summary="For many of the great soft keys in Sourcery Tools." />
+                  android:key="credits_google_key" 
+                  android:summary="For many of the great soft keys in Sourcery Tools." />
 
 <PreferenceScreen android:title="Hooolm, Nate , Zaphod-Beeblebrox,he_stheone64, reverepats, sonnysekhon" 
-			android:key="credits_google_key" 
-			android:summary="For many of the great for battery mods available in Sourcery Tools." />
+                  android:key="credits_google_key" 
+                  android:summary="For many of the great for battery mods available in Sourcery Tools." />
 <PreferenceScreen android:title="Kernel Developers" 
-			android:key="kernelsPref" 
-			android:summary="For all the great kerenls in Sourcery Tools. Please support the kernel developers as they do great work." />
+                  android:key="kernelsPref" 
+                  android:summary="For all the great kerenls in Sourcery Tools. Please support the kernel developers as they do great work." />
 
+<PreferenceScreen android:title="Google" 
+                  android:key="credits_google_key" 
+                  android:summary="Thanks google for Android,Apps,OpenSource Just the best damn Phone OS ever." />
 
-
-                 <PreferenceScreen android:title="Google" 
-			android:key="credits_google_key" 
-			android:summary="Thanks google for Android,Apps,OpenSource Just the best damn Phone OS ever." />
-
-                <PreferenceScreen android:title="Samsung" 
-			android:key="credits_google_key" 
-			android:summary="For making a damn nice phone!" />
-
-
- </PreferenceCategory>
-
-            <PreferenceCategory android:title="Great Gratitude">
-
-                <PreferenceScreen android:title="Droid Forums" 
-			android:key="droidforumPref" 
-			android:summary="For allowing us to host our rom on their great site." />
-
-<PreferenceScreen android:title="RootzWiki" 
-			android:key="rootwikiPref" 
-			android:summary="For allowing us to host our rom on their great site." />
-
-<PreferenceScreen android:title="All Mods of Droid Forums and RootzWiki" 
-			android:key="credits_google_key" 
-			android:summary="Just too many to mention your all great! " />
-
-<PreferenceScreen android:title="XDA." 
-			android:key="xdaPref" 
-			android:summary="For making some of the best developers available to contact. " />
+<PreferenceScreen android:title="Samsung" 
+                  android:key="credits_google_key" 
+                  android:summary="For making a damn nice phone!" />
 
 </PreferenceCategory>
-              <PreferenceCategory android:title="We attempt to give all credits.">
+
+<PreferenceCategory android:title="Great Gratitude">
+
+<PreferenceScreen android:title="Droid Forums" 
+                  android:key="droidforumPref" 
+                  android:summary="For allowing us to host our rom on their great site." />
+
+<PreferenceScreen android:title="RootzWiki" 
+                  android:key="rootwikiPref" 
+                  android:summary="For allowing us to host our rom on their great site." />
+
+<PreferenceScreen android:title="All Mods of Droid Forums and RootzWiki" 
+                  android:key="credits_google_key" 
+                  android:summary="Just too many to mention your all great! " />
+
+<PreferenceScreen android:title="XDA." 
+                  android:key="xdaPref" 
+                  android:summary="For making some of the best developers available to contact. " />
+
+</PreferenceCategory>
+
+<PreferenceCategory android:title="We attempt to give all credits.">
 
 <PreferenceScreen android:title="Please view change log" 
-			android:key="featurePref" 
-			android:summary="For complete credits and thanks." />
+                  android:key="featurePref" 
+                  android:summary="For complete credits and thanks." />
 
-                <PreferenceScreen android:title="If we missed you" 
-			android:key="credits_google_key" 
-			android:summary="Most forums- eagle1967, IRC ##Sourcery , E-mail icsourcery@gmail.com" />
-            </PreferenceCategory>
+<PreferenceScreen android:title="If we missed you" 
+                  android:key="credits_google_key" 
+                  android:summary="Most forums- eagle1967, IRC ##Sourcery , E-mail icsourcery@gmail.com" />
+
+</PreferenceCategory>
 
        
-              <PreferenceCategory android:title="Other Credits">
+<PreferenceCategory android:title="Other Credits">
 
-              <PreferenceScreen android:title="JBSourcery Tools" 
-			android:key="freebirdPref" 
-			android:summary="Kernels,BootAnimations,Mods,Themes,Soft Keys,Apps, ETC. are property of their developers as credited." />
+<PreferenceScreen android:title="JBSourcery Tools" 
+                  android:key="freebirdPref" 
+                  android:summary="Kernels,BootAnimations,Mods,Themes,Soft Keys,Apps, ETC. are property of their developers as credited." />
 
-             <PreferenceScreen android:title="Donations" 
-			android:key="cheechPref" 
-			android:summary="Thankyou for all who have donated, All donations will go back into the rom either buying a device for a team member without or securing use of programs for sourcery." />
+<PreferenceScreen android:title="Donations" 
+                  android:key="cheechPref" 
+                  android:summary="Thankyou for all who have donated, All donations will go back into the rom either buying a device for a team member without or securing use of programs for sourcery." />
 
-            <PreferenceScreen
+<PreferenceScreen
                 android:key="githubPref"
                 android:title="JBSourcery Source Code"
                 android:summary="Yes JBSourcery is now hosted on Github." />
 
+<PreferenceScreen android:title="Share the Love" 
+                  android:key="credits_google_key" 
+                  android:summary="Please remember to donate to contributers other than Team Sourcery also as without them we couldnt give you JBSourcery!!!!!!" />
 
+</PreferenceCategory>
 
-                <PreferenceScreen android:title="Share the Love" 
-			android:key="credits_google_key" 
-			android:summary="Please remember to donate to contributers other than Team Sourcery also as without them we couldnt give you JBSourcery!!!!!!" />
-            </PreferenceCategory>
+<PreferenceCategory android:title="Donate">
 
-        <PreferenceCategory android:title="Donate">
-
-		<Preference
-			android:key="donatePref"
-			android:layout="@layout/donate_link"/>
+<Preference
+                 android:key="donatePref"
+                 android:layout="@layout/donate_link"/>
 
     </PreferenceCategory>
 
