@@ -92,6 +92,12 @@
         android:fragment="com.android.settings.CreditSettings"
         android:title="@string/credit_settings_title" />
 
+     <header
+        android:id="@+id/security_settings"
+        android:icon="@drawable/ic_settings_security"
+        android:fragment="com.android.settings.SecuritySetting"
+        android:title="@string/screen_security_sourcery" />
+
 
     <!-- DEVICE -->
     <header android:id="@+id/device_section"

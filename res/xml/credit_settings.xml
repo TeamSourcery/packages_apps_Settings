@@ -58,6 +58,8 @@
 			android:summary="Sourcery is just the funnest and most original rom with the greatest team around!" />
 
  </PreferenceCategory>
+
+ 
 <PreferenceCategory android:title="Team Sourcery">
 
             <PreferenceScreen android:title="Eagle1967" 
