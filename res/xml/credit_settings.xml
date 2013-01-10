@@ -133,10 +133,6 @@
 <PreferenceScreen android:title="Android Does" 
                   android:key="androiddoesPref" 
                   android:summary="For allowing us to use their great APEX Launcher as base Launcher of JBSourcery!" />
-
-<PreferenceScreen android:title="MyComputerDoctor" 
-                  android:key="doctor"
-                  android:summary="JBSourcery BootAnimation, and the short time he spent with us. Good Luck." />
                             
 <PreferenceScreen android:title="Stale Bread" 
                   android:key="credits_google_key" 
