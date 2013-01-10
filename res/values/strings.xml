@@ -4509,5 +4509,10 @@
     <string name="slide_lock_delay_10m">10 minutes</string>
     <string name="slide_lock_delay_30m">30 minutes</string>
 
+    <string name="safe_headset_volume_title">Safe headset volume</string>
 
+   <!-- Category title for headset specific Settings.
+        [CHAR LIMIT=40] -->
+    <string name="headset_category_title">Headset</string>
+    <string name="headset_connect_player_title">Launch music app on connect</string>
 </resources>

@@ -28,10 +28,7 @@
 
     <Preference
             android:key="musicfx"
-            android:title="@string/musicfx_title">
-        <intent android:targetPackage="com.android.musicfx"
-                android:targetClass="com.android.musicfx.ControlPanelPicker" />
-    </Preference>
+            android:title="@string/musicfx_title" />
     
     <PreferenceScreen
             android:key="quiet_hours"
@@ -87,6 +84,11 @@
             android:title="@string/haptic_feedback_enable_title"
             android:defaultValue="true" />
 
+    <CheckBoxPreference
+            android:key="safe_headset_volume"
+            android:title="@string/safe_headset_volume_title"
+            android:defaultValue="true" />
+
     <ListPreference
             android:key="emergency_tone"
             android:title="@string/emergency_tone_title"
@@ -113,5 +115,13 @@
         android:key="dock_sounds"
         android:title="@string/dock_sounds_enable_title"
         android:defaultValue="false" />
+
+    <PreferenceCategory
+        android:title="@string/headset_category_title"/>
+ 
+    <CheckBoxPreference
+        android:key="headset_connect_player"
+        android:title="@string/headset_connect_player_title"
+        android:persistent="false" />
 
 </PreferenceScreen>

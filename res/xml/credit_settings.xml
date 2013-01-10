@@ -89,11 +89,18 @@
 <PreferenceScreen android:title="atreyu381" 
                   android:key="atreuPref" 
                   android:summary="Theme consultant , Theme development, Rom Tester, Battery mod Maker!" />
+
+<PreferenceScreen android:title="xkape" 
+	          android:key="xkapePref" 
+	          android:summary="Theme consultant , Theme development, Rom Tester! " />
  
 <PreferenceScreen android:title="Jake Boyer" 
                   android:key="boyerPref" 
                   android:summary="Porting the rom to ToroPlus(Sprint) great job!" />
   
+<PreferenceScreen android:title="Steven58" 
+                  android:key="stevenPref" 
+                  android:summary="Our newest member not sure what hes doing :)..But he is old!" />
   
 </PreferenceCategory>
 
