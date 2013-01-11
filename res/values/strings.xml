@@ -4515,4 +4515,8 @@
         [CHAR LIMIT=40] -->
     <string name="headset_category_title">Headset</string>
     <string name="headset_connect_player_title">Launch music app on connect</string>
+
+      <string name="volume_adjust_sounds_enable_title">Volume adjust sound</string>
+    <!-- Sound settings screen, setting check box summary -->
+    <string name="volume_adjust_sounds_enable_summary">Play sound when adjusting volume with hard keys</string>
 </resources>
