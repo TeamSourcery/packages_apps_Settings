@@ -25,13 +25,7 @@
             android:dialogTitle="@string/all_volume_title"
             android:persistent="false"
             android:streamType="ring" />
- 
-     <ListPreference
-        android:entries="@array/less_notification_sounds_entries"
-        android:entryValues="@array/less_notification_sounds_values"
-        android:key="less_notification_sounds"
-        android:summary="@string/less_notification_sounds_summary"
-        android:title="@string/less_notification_sounds_title" />
+     
     <Preference
             android:key="musicfx"
             android:title="@string/musicfx_title" />
