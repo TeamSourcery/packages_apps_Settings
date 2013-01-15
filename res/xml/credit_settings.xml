@@ -208,7 +208,7 @@
 
 <PreferenceScreen android:title="Donations" 
                   android:key="cheechPref" 
-                  android:summary="We Want to thank Everyone who has or will donate to this Project, It is appreciated." />
+                  android:summary="Thanks to all who have or will donate to our quest-We enjoy Bringing you the most original ROM Period!." />
 
 <PreferenceScreen
                 android:key="githubPref"

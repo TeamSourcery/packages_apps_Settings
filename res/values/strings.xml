@@ -4422,7 +4422,7 @@
  	 	
    <!-- Donation Strings -->
      <string name="pref_title_build_info">Donate</string>
-     <string name="adw_donate">We Appreciate your support!!!</string>
+     <string name="adw_donate">We Appreciate all donations to help us continue our quest!</string>
    <!-- About device screen, version of Android. -->
     
    
@@ -4520,5 +4520,9 @@
     <!-- Sound settings screen, setting check box summary -->
     <string name="volume_adjust_sounds_enable_summary">Play sound when adjusting volume with hard keys</string>
 
-       
+    <!-- Notification Sound Limiter -->
+    <string name="less_notification_sounds_title">Less Frequent Notification Sounds</string>
+    <string name="less_notification_sounds_summary">Limit each app\'s notification sounds to play once per the set value</string>
+    <string name="default_behavior">Default behavior</string>
+    
 </resources>
