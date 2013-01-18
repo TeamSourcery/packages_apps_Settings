@@ -4524,5 +4524,11 @@
     <string name="less_notification_sounds_title">Less Frequent Notification Sounds</string>
     <string name="less_notification_sounds_summary">Limit each app\'s notification sounds to play once per the set value</string>
     <string name="default_behavior">Default behavior</string>
+
+   <!--- Volume key cursor control -->
+    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
+    <string name="volume_key_cursor_control_off">Disabled</string>
+    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
+    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
     
 </resources>
