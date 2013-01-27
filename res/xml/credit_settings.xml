@@ -94,7 +94,7 @@
 	          android:key="xkapePref" 
 	          android:summary="Theme consultant , Theme development, Rom Tester! " />
  
-<PreferenceScreen android:title="Jake Boyer" 
+<PreferenceScreen android:title="Jake Boyer and Zzz73" 
                   android:key="boyerPref" 
                   android:summary="Porting the rom to ToroPlus(Sprint) great job!" />
   
