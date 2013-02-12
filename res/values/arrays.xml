@@ -857,6 +857,7 @@
         <item>50</item>
         <item>100</item>
         <item>200</item>
+        <item>500</item>
     </string-array>
 
     <string-array name="sms_security_check_limit_values" translatable="false">
@@ -864,6 +865,7 @@
         <item>50</item>
         <item>100</item>
         <item>200</item>
+        <item>500</item>
     </string-array>
 
 </resources>

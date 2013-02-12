@@ -112,6 +112,18 @@ if (getPreferenceManager() != null) {
 			}
 		});
 
+        Preference roymanLink = (Preference) findPreference("roymanPref");
+        roymanLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				String url = "http://forum.xda-developers.com/showthread.php?t=2100219";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);				
+				return true;
+			}
+		});
+
           Preference bugLink = (Preference) findPreference("bugPref");
         bugLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 			public boolean onPreferenceClick(Preference preference) {

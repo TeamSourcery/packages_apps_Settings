@@ -142,6 +142,10 @@
                   android:key="thepysntystPref" 
                   android:summary="For the awesome Animations" />
 
+<PreferenceScreen android:title="Royman" 
+                  android:key="roymanPref" 
+                  android:summary="For the awesome Notification Widget" />
+
 <PreferenceScreen android:title="CJM" 
                   android:key="cjmPref" 
                   android:summary="For many of the great Wallpapers and pulldown mods.." />
