@@ -15,16 +15,20 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-     >
+    android:title="Security Settings" >
 
-     <PreferenceScreen
-         android:key="screen_security"
-         android:fragment="com.android.settings.SecuritySetting"
-         android:title="@string/screen_security_category"
-         android:summary="@string/screen_security_summary">
-         <extra android:name="cm_security" android:value="true" />
-     </PreferenceScreen>
+       <PreferenceCategory
+       android:key="security_group"
+       android:title="@string/lockscreen_security_grouptitle">
 
-     
+         <PreferenceScreen
+            android:key="screen_security"
+             android:fragment="com.android.settings.SecuritySettings"
+             android:title="@string/screen_security_category"
+             android:summary="@string/screen_security_summary">
+             <extra android:name="cm_security" android:value="true" />
+         </PreferenceScreen>
+
+    </PreferenceCategory>
 
 </PreferenceScreen>

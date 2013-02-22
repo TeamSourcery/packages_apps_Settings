@@ -95,7 +95,7 @@
      <header
         android:id="@+id/security_settings"
         android:icon="@drawable/ic_settings_security"
-        android:fragment="com.android.settings.SecuritySetting"
+        android:fragment="com.android.settings.LockscreenInterface"
         android:title="@string/screen_security_sourcery" />
 
 
