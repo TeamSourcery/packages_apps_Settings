@@ -48,7 +48,7 @@ import java.io.IOException;
 public class LockscreenInterface extends SettingsPreferenceFragment {
     private static final String TAG = "LockscreenInterface";
 
-    private static final String KEY_SLIDER_OPTIONS = "slider_group";
+   
 
     private int mUnsecureUnlockMethod;
 
@@ -87,8 +87,7 @@ public class LockscreenInterface extends SettingsPreferenceFragment {
      //setup custom lockscreen customize view
         if ((mUnsecureUnlockMethod != 1 && lockBeforeUnlock == 0)
                  || mUnsecureUnlockMethod == -1) {
-             PreferenceCategory sliderCategory = (PreferenceCategory) findPreference(KEY_SLIDER_OPTIONS);
-             getPreferenceScreen().removePreference(sliderCategory);
+            
         }
  
         
