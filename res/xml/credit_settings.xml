@@ -100,7 +100,7 @@
   
 <PreferenceScreen android:title="Steven58" 
                   android:key="stevenPref" 
-                  android:summary="Our newest member not sure what hes doing :)..But he is old!" />
+                  android:summary="Irc and website monitoring, testing." />
   
 </PreferenceCategory>
 
