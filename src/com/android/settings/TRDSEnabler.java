@@ -24,7 +24,7 @@ import android.provider.Settings;
 import android.util.Slog;
 import android.widget.CompoundButton;
 import android.widget.Switch;
-import com.android.settings.util.Helpers; 
+//import com.android.settings.util.Helpers; 
 
 import java.util.List;
 
@@ -70,7 +70,7 @@ public class TRDSEnabler implements CompoundButton.OnCheckedChangeListener {
         // Handle a switch change
         Settings.Secure.putInt(mContext.getContentResolver(),
                 Settings.Secure.UI_INVERTED_MODE, isChecked ? 1 : 0);
-        Helpers.restartSystemUI();
+       // Helpers.restartSystemUI();
 
         ActivityManager am = (ActivityManager) mContext.getSystemService(Context.ACTIVITY_SERVICE);
         List<ActivityManager.RunningAppProcessInfo> pids = am.getRunningAppProcesses();
@@ -102,6 +102,9 @@ public class TRDSEnabler implements CompoundButton.OnCheckedChangeListener {
                }
                if(info.processName.equalsIgnoreCase("com.google.android.apps.plus")) {
                     am.killBackgroundProcesses("com.google.android.apps.plus");
+               }
+                if(info.processName.equalsIgnoreCase("com.anddoes.launcher")) {
+                    am.killBackgroundProcesses("com.anddoes.launcher");
                }
            }
     }

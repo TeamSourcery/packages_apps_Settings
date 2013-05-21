@@ -4613,7 +4613,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="permissions_settings_title">Permissions</string>
  
    <!-- TRDS Settings -->
-    <string name="trds_settings_title">Invert Potion</string>
+    <string name="trds_settings_title">Black Magic</string>
 
     <!-- Android debugging over WiFi -->
     <string name="adb_over_network">ADB over network</string>
