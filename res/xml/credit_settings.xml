@@ -86,13 +86,6 @@
                   android:key="johnnybPref" 
                   android:summary="Theme development, graphics assistant, " />
 
-<PreferenceScreen android:title="atreyu381" 
-                  android:key="atreuPref" 
-                  android:summary="Theme consultant , Theme development, Rom Tester, Battery mod Maker!" />
-
-<PreferenceScreen android:title="xkape" 
-	          android:key="xkapePref" 
-	          android:summary="Theme consultant , Theme development, Rom Tester! " />
  
 <PreferenceScreen android:title="Jake Boyer and Zzz73" 
                   android:key="boyerPref" 
@@ -102,6 +95,16 @@
                   android:key="stevenPref" 
                   android:summary="Irc and website monitoring, testing." />
   
+</PreferenceCategory>
+
+<PreferenceCategory android:title="Beta Testers">
+
+<PreferenceScreen android:title="Thanks to our testers" 
+                  android:summary="bpark32, CharlzO, chasew83, cmb6, cppo215, Damien White, dinaps86, droidx86, firebird11, Gatorman, ipharus, jboyer0000" />
+
+<PreferenceScreen android:title="" 
+                  android:summary="JeremyBrown, jerodweeks84, jesssiii, JFay22, jonstrong, justen7723, lancem71, lenningbrad, mando76, marcoperro74, Mirror619, PARick, PharmGuy" />
+
 </PreferenceCategory>
 
 <PreferenceCategory android:title="Github Pulls">

@@ -148,17 +148,7 @@ if (getPreferenceManager() != null) {
 			}
 		});
 
-        Preference xkapeLink = (Preference) findPreference("xkapePref");
-       xkapeLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
-			public boolean onPreferenceClick(Preference preference) {
-				// TODO Auto-generated method stub
-				String url = "http://teamsourcery.com/ICSourcery/bios/xkape.html";
-				Intent i = new Intent(Intent.ACTION_VIEW);
-				i.setData(Uri.parse(url));
-				startActivity(i);				
-				return true;
-			}
-		});
+       
 
             Preference androiddoesLink = (Preference) findPreference("androiddoesPref");
         androiddoesLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
@@ -399,17 +389,6 @@ Preference barryLink = (Preference) findPreference("barryPref");
 		});
 
 
-Preference atreuLink = (Preference) findPreference("atreuPref");
-       atreuLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
-			public boolean onPreferenceClick(Preference preference) {
-				// TODO Auto-generated method stub
-				String url = "http://teamsourcery.com/ICSourcery/bios/atreu.html";
-				Intent i = new Intent(Intent.ACTION_VIEW);
-				i.setData(Uri.parse(url));
-				startActivity(i);				
-				return true;
-			}
-		});
 
 Preference johnnybLink = (Preference) findPreference("johnnybPref");
        johnnybLink.setOnPreferenceClickListener(new OnPreferenceClickListener() {
