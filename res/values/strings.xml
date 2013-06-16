@@ -4621,4 +4621,8 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <!-- Warning for Adb over Network -->
     <string name="adb_over_network_warning">WARNING: When ADB over network is enabled, your phone is open for intrusions on all connected networks, including GSM data network!\n\nOnly use this feature when you are connected on trusted networks.\n\nDo you really want to enable this function?</string>
 
+    <!-- Label for are-notifications-enabled checkbox in app details [CHAR LIMIT=20] -->
+    <string name="app_halo_label_black">Blacklist HALO notifications</string>
+    <string name="app_halo_label_white">Whitelist HALO notifications</string>
+
 </resources>
